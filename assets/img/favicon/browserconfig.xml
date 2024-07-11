@@ -1,0 +1,9 @@
+<browserconfig>
+<script/>
+<msapplication>
+<tile>
+<square150x150logo src="/mstile-150x150.png"/>
+<TileColor>#ff2d20</TileColor>
+</tile>
+</msapplication>
+</browserconfig>
