@@ -77,7 +77,7 @@
           <path d="M7 15.5c3.667 2 6.333 2 10 0" />
         </svg>
       </div>
-      <div class="mt-px ml-1">Documentation website <a href="index.html" class="underline">Galih Agus Saputra</a>.</div>
+      <div class="mt-px ml-1">Documentation website <a href="http://localhost/laravel-doc/" class="underline">Galih Agus Saputra</a>.</div>
     </div>
 
     <div class="relative overflow-auto dark:bg-dark-700" id="docsScreen">
@@ -86,7 +86,7 @@
           class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:shrink-0 lg:flex lg:flex-col lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:from-dark-800 dark:to-dark-700"
         >
           <div class="relative min-h-0 flex-1 flex flex-col xl:w-80">
-            <a href="index.html" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
+            <a href="http://localhost/laravel-doc/" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
               <img class="w-8 h-8 shrink-0 transition-all duration-300 lg:w-12 lg:h-12" src="assets/img/logomark.min.svg" alt="Laravel" width="50" height="52" />
               <img src="assets/img/logotype.min.svg" alt="Laravel" class="hidden ml-4 lg:block" width="114" height="29" />
             </a>
@@ -383,7 +383,7 @@
                           <a href="/docs/11.x/horizon">Horizon</a>
                         </li>
                         <li>
-                          <a href="index.html">Jetstream</a>
+                          <a href="http://localhost/laravel-doc/">Jetstream</a>
                         </li>
                         <li>
                           <a href="/docs/11.x/mix">Mix</a>
@@ -440,7 +440,7 @@
               </nav>
 
               <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
-                <span class="font-medium">Laravel Vapor:</span> experience extreme scale on a dedicated serverless platform for Laravel. <a class="underline text-red-600" href="index.html">Sign up now!</a>.
+                <span class="font-medium">Laravel Vapor:</span> experience extreme scale on a dedicated serverless platform for Laravel. <a class="underline text-red-600" href="http://localhost/laravel-doc/">Sign up now!</a>.
               </div>
             </div>
           </div>
@@ -792,7 +792,7 @@
                         <a href="/docs/11.x/horizon">Horizon</a>
                       </li>
                       <li>
-                        <a href="index.html">Jetstream</a>
+                        <a href="http://localhost/laravel-doc/">Jetstream</a>
                       </li>
                       <li>
                         <a href="/docs/11.x/mix">Mix</a>
@@ -885,15 +885,15 @@
                       class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-700 dark:text-gray-400 dark:placeholder-gray-500"
                       @change="window.location = $event.target.value"
                     >
-                      <option value="index.html">Master</option>
-                      <option selected value="index.html">11.x</option>
-                      <option value="index.html">10.x</option>
-                      <option value="index.html">9.x</option>
-                      <option value="index.html">8.x</option>
-                      <option value="index.html">7.x</option>
-                      <option value="index.html">6.x</option>
-                      <option value="index.html">5.x</option>
-                      <option value="index.html">4.x</option>
+                      <option value="http://localhost/laravel-doc/">Master</option>
+                      <option selected value="http://localhost/laravel-doc/">11.x</option>
+                      <option value="http://localhost/laravel-doc/">10.x</option>
+                      <option value="http://localhost/laravel-doc/">9.x</option>
+                      <option value="http://localhost/laravel-doc/">8.x</option>
+                      <option value="http://localhost/laravel-doc/">7.x</option>
+                      <option value="http://localhost/laravel-doc/">6.x</option>
+                      <option value="http://localhost/laravel-doc/">5.x</option>
+                      <option value="http://localhost/laravel-doc/">4.x</option>
                     </select>
                     <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none dark:hidden" src="assets/img/drop_arrow.min.svg" alt="" />
                     <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none hidden dark:block" src="assets/img/drop_arrow.dark.min.svg" alt="" />
@@ -997,7 +997,7 @@
                   <blockquote>
                     <p>
                       [!NOTE]<br />
-                      New to Laravel? Check out the <a href="index.html">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
+                      New to Laravel? Check out the <a href="http://localhost/laravel-doc/">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
                     </p>
                   </blockquote>
                   <p><a name="why-laravel"></a></p>
@@ -1017,7 +1017,7 @@
                     Laravel is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Laravel's built-in support for fast, distributed cache systems like Redis, horizontal scaling with Laravel is a breeze. In fact, Laravel
                     applications have been easily scaled to handle hundreds of millions of requests per month.
                   </p>
-                  <p>Need extreme scaling? Platforms like <a href="index.html">Laravel Vapor</a> allow you to run your Laravel application at nearly limitless scale on AWS's latest serverless technology.</p>
+                  <p>Need extreme scaling? Platforms like <a href="http://localhost/laravel-doc/">Laravel Vapor</a> allow you to run your Laravel application at nearly limitless scale on AWS's latest serverless technology.</p>
                   <h4>A Community Framework</h4>
                   <p>
                     Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have
@@ -1093,7 +1093,7 @@
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">php </span><span style="color: #BFC7D5;">artisan</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">migrate</span></div></code></pre>
                   </div>
                   <blockquote>
-                    <p>[!NOTE] If you are developing on macOS or Windows and need to install MySQL, PostgreSQL, or Redis locally, consider using <a href="index.html#plans">Herd Pro</a>.</p>
+                    <p>[!NOTE] If you are developing on macOS or Windows and need to install MySQL, PostgreSQL, or Redis locally, consider using <a href="http://localhost/laravel-doc/#plans">Herd Pro</a>.</p>
                   </blockquote>
                   <p><a name="directory-configuration"></a></p>
                   <h3>Directory Configuration</h3>
@@ -1104,7 +1104,7 @@
                   <p><a name="local-installation-using-herd"></a></p>
                   <h2>Local Installation Using Herd</h2>
                   <p>
-                    <a href="index.html">Laravel Herd</a> is a blazing fast, native Laravel and PHP development environment for macOS and Windows. Herd includes everything you need to get started with Laravel development, including PHP and
+                    <a href="http://localhost/laravel-doc/">Laravel Herd</a> is a blazing fast, native Laravel and PHP development environment for macOS and Windows. Herd includes everything you need to get started with Laravel development, including PHP and
                     Nginx.
                   </p>
                   <p>
@@ -1113,14 +1113,14 @@
                   </p>
                   <blockquote>
                     <p>
-                      [!NOTE] <a href="index.html#plans">Herd Pro</a> augments Herd with additional powerful features, such as the ability to create and manage local MySQL, Postgres, and Redis databases, as well as local mail viewing and
+                      [!NOTE] <a href="http://localhost/laravel-doc/#plans">Herd Pro</a> augments Herd with additional powerful features, such as the ability to create and manage local MySQL, Postgres, and Redis databases, as well as local mail viewing and
                       log monitoring.
                     </p>
                   </blockquote>
                   <p><a name="herd-on-macos"></a></p>
                   <h3>Herd on macOS</h3>
                   <p>
-                    If you develop on macOS, you can download the Herd installer from the <a href="index.html">Herd website</a>. The installer automatically downloads the latest version of PHP and configures your Mac to always run
+                    If you develop on macOS, you can download the Herd installer from the <a href="http://localhost/laravel-doc/">Herd website</a>. The installer automatically downloads the latest version of PHP and configures your Mac to always run
                     <a href="https://www.nginx.com/">Nginx</a> in the background.
                   </p>
                   <p>
@@ -1132,11 +1132,11 @@
                     <pre><code data-theme="olaolu-palenight" data-lang="nothing" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">cd ~/Herd</span></div><div class='line'><span style="color: #BFC7D5;">laravel new my-app</span></div><div class='line'><span style="color: #BFC7D5;">cd my-app</span></div><div class='line'><span style="color: #BFC7D5;">herd open</span></div></code></pre>
                   </div>
                   <p>Of course, you can always manage your parked directories and other PHP settings via Herd's UI, which can be opened from the Herd menu in your system tray.</p>
-                  <p>You can learn more about Herd by checking out the <a href="index.htmldocs">Herd documentation</a>.</p>
+                  <p>You can learn more about Herd by checking out the <a href="http://localhost/laravel-doc/docs">Herd documentation</a>.</p>
                   <p><a name="herd-on-windows"></a></p>
                   <h3>Herd on Windows</h3>
                   <p>
-                    You can download the Windows installer for Herd on the <a href="index.htmlwindows">Herd website</a>. After the installation finishes, you can start Herd to complete the onboarding process and access the Herd UI for the
+                    You can download the Windows installer for Herd on the <a href="http://localhost/laravel-doc/windows">Herd website</a>. After the installation finishes, you can start Herd to complete the onboarding process and access the Herd UI for the
                     first time.
                   </p>
                   <p>The Herd UI is accessible by left-clicking on Herd's system tray icon. A right-click opens the quick menu with access to all tools that you need on a daily basis.</p>
@@ -1148,7 +1148,7 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="nothing" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">cd ~\Herd</span></div><div class='line'><span style="color: #BFC7D5;">laravel new my-app</span></div><div class='line'><span style="color: #BFC7D5;">cd my-app</span></div><div class='line'><span style="color: #BFC7D5;">herd open</span></div></code></pre>
                   </div>
-                  <p>You can learn more about Herd by checking out the <a href="index.htmldocs/windows">Herd documentation for Windows</a>.</p>
+                  <p>You can learn more about Herd by checking out the <a href="http://localhost/laravel-doc/docs/windows">Herd documentation for Windows</a>.</p>
                   <p><a name="docker-installation-using-sail"></a></p>
                   <h2>Docker Installation Using Sail</h2>
                   <p>
@@ -1340,7 +1340,7 @@
                   <blockquote>
                     <p>
                       [!NOTE]<br />
-                      New to Laravel? Check out the <a href="index.html">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
+                      New to Laravel? Check out the <a href="http://localhost/laravel-doc/">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
                     </p>
                   </blockquote>
                   <p><a name="laravel-the-fullstack-framework"></a></p>
@@ -1352,7 +1352,7 @@
                   </p>
                   <p>
                     If this is how you plan to use Laravel, you may want to check out our documentation on <a href="/docs/11.x/frontend">frontend development</a>, <a href="/docs/11.x/routing">routing</a>,
-                    <a href="/docs/11.x/views">views</a>, or the <a href="/docs/11.x/eloquent">Eloquent ORM</a>. In addition, you might be interested in learning about community packages like <a href="index.html">Livewire</a> and
+                    <a href="/docs/11.x/views">views</a>, or the <a href="/docs/11.x/eloquent">Eloquent ORM</a>. In addition, you might be interested in learning about community packages like <a href="http://localhost/laravel-doc/">Livewire</a> and
                     <a href="https://inertiajs.com">Inertia</a>. These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
                   </p>
                   <p>If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using <a href="/docs/11.x/vite">Vite</a>.</p>
@@ -1471,7 +1471,7 @@
             <div class="mt-5">
               <ul class="space-y-3 text-gray-700 dark:text-gray-500">
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Laravel Bootcamp</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Laravel Bootcamp</a>
                 </li>
                 <li>
                   <a href="https://laracasts.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Laracasts</a>
@@ -1495,7 +1495,7 @@
                   <a href="https://larabelles.com/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Larabelles</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Careers</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Careers</a>
                 </li>
                 <li>
                   <a href="https://larajobs.com/?partner=5" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Jobs</a>
@@ -1517,7 +1517,7 @@
                   <a href="https://vehikl.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Vehikl</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">WebReinvent</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">WebReinvent</a>
                 </li>
                 <li>
                   <a href="https://tighten.co" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Tighten</a>
@@ -1577,10 +1577,10 @@
                   <a href="https://envoyer.io" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Envoyer</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Forge</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Forge</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Herd</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Herd</a>
                 </li>
                 <li>
                   <a href="/docs/11.x/horizon" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Horizon</a>
@@ -1589,13 +1589,13 @@
                   <a href="https://inertiajs.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Inertia</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Jetstream</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Jetstream</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Livewire</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Livewire</a>
                 </li>
                 <li>
-                  <a href="index.html" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Nova</a>
+                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Nova</a>
                 </li>
                 <li>
                   <a href="/docs/11.x/octane" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Octane</a>
@@ -1605,7 +1605,7 @@
           </div>
         </div>
         <div class="mt-10 border-t pt-6 pb-16 border-gray-200 dark:border-dark-500">
-          <p class="text-xs text-gray-700 text-center dark:text-gray-400">Copyright &copy; 2024 <a href="index.html">Galih Agus Saputra</a>.</p>
+          <p class="text-xs text-gray-700 text-center dark:text-gray-400">Copyright &copy; 2024 <a href="http://localhost/laravel-doc/">Galih Agus Saputra</a>.</p>
         </div>
       </div>
     </footer>

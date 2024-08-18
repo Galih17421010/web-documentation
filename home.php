@@ -44,6 +44,7 @@
     <link rel="modulepreload" href="assets/js/home.js" />
     <link rel="stylesheet" href="assets/css/home.css" />
     <script type="module" src="assets/js/home.js"></script>
+    
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
     <!-- / Fathom -->
@@ -107,174 +108,10 @@
       updateTheme();
     </script>
   </head>
-  <body
-    x-data="{
-        navIsOpen: false,
-    }"
-    class="w-full h-full font-sans antialiased text-gray-900 language-php"
-    data-instant-intensity="0"
-  >
+  <body x-data="{navIsOpen: false,}" class="w-full h-full font-sans antialiased text-gray-900 language-php" data-instant-intensity="0">
     <div class="absolute top-0 w-full">
       <header x-trap.inert.noscroll="navIsOpen" class="main-header relative z-50 text-gray-700" @keydown.window.escape="navIsOpen = false" @click.away="navIsOpen = false">
-        <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm h-9">
-          <template id="news-herd">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
-                <path d="M7 8v1" />
-                <path d="M17 8v1" />
-                <path d="M12.5 4c-.654 1.486 -1.26 3.443 -1.5 9h2.5c-.19 2.867 .094 5.024 .5 7" />
-                <path d="M7 15.5c3.667 2 6.333 2 10 0" />
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Get started with PHP and Laravel faster than ever using <a href="https://herd.laravel.com" class="underline">Laravel Herd</a>.</div>
-          </template>
-
-          <template id="news-laracon">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Join us in Dallas, TX! Tickets are now available for <a href="https://laracon.us" class="underline">Laracon US</a>.</div>
-          </template>
-
-          <template id="news-laracon-in">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Let's go to India! Tickets are now available for <a href="https://laracon.in" class="underline">Laracon IN</a>.</div>
-          </template>
-
-          <template id="news-laracon-eu">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Let's go to Europe! Tickets are now available for <a href="https://laracon.eu" class="underline">Laracon EU</a>.</div>
-          </template>
-
-          <template id="news-laracon-au">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Let's go down under! Tickets are now available for <a href="https://laracon.au" class="underline">Laracon AU</a>.</div>
-          </template>
-
-          <template id="news-forge">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Servers with PHP 8.3 are now available for provisioning via <a href="https://forge.laravel.com" class="underline">Laravel Forge</a>.</div>
-          </template>
-
-          <template id="news-vapor">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Deploy Laravel with the infinite scale of serverless using <a href="https://vapor.laravel.com" class="underline">Laravel Vapor</a>.</div>
-          </template>
-
-          <template id="news-pulse">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">How's your health? Check your application's vital signs using <a href="https://pulse.laravel.com" class="underline">Laravel Pulse</a>.</div>
-          </template>
-
-          <template id="news-reverb">
-            <div>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3.707 6.293l2.586 -2.586a1 1 0 0 1 1.414 0l5.586 5.586a1 1 0 0 1 0 1.414l-2.586 2.586a1 1 0 0 1 -1.414 0l-5.586 -5.586a1 1 0 0 1 0 -1.414z" />
-                <path d="M6 10l-3 3l3 3l3 -3" />
-                <path d="M10 6l3 -3l3 3l-3 3" />
-                <path d="M12 12l1.5 1.5" />
-                <path d="M14.5 17a2.5 2.5 0 0 0 2.5 -2.5" />
-                <path d="M15 21a6 6 0 0 0 6 -6" />
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Incoming transmission received. <a href="https://reverb.laravel.com" class="underline">Laravel Reverb</a> is now available!</div>
-          </template>
-
-          <template id="news-nova">
-            <div>
-              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-                ></path>
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Take your administration backend to another dimension with <a href="https://nova.laravel.com" class="underline">Laravel Nova</a>.</div>
-          </template>
-
-          <template id="news-careers">
-            <div>
-              <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
-                />
-              </svg>
-            </div>
-
-            <div class="mt-px ml-1">Laravel is hiring! <a href="https://laravel.com/careers" class="underline">Help us build the future of Laravel</a>.</div>
-          </template>
-        </div>
-        <script>
-          const activeNewsTemplate = document.getElementById(
-            "news-" + JSON.parse("[\u0022nova\u0022,\u0022forge\u0022,\u0022vapor\u0022,\u0022herd\u0022,\u0022pulse\u0022,\u0022reverb\u0022,\u0022laracon\u0022,\u0022laracon-au\u0022]")[Math.floor(Math.random() * 8)]
-          );
-
-          activeNewsTemplate.replaceWith(activeNewsTemplate.content);
-        </script>
-
-        <div class="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
+        <div class="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6 fixed">
           <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
               <a href="/" class="inline-flex items-center">
@@ -285,339 +122,15 @@
             <ul class="relative hidden lg:flex lg:items-center lg:justify-center lg:gap-6 xl:gap-10">
               <li><a href="https://forge.laravel.com">Forge</a></li>
               <li><a href="https://vapor.laravel.com">Vapor</a></li>
-              <li x-data="{ expanded: false }" class="relative" @keydown.window.escape="expanded = false">
-                <button class="flex items-center justify-center" @click="expanded = !expanded">
-                  Ecosystem
-                  <span class="ml-3 shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" :class="{ 'rotate-180': expanded }" class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </span>
-                </button>
-                <div
-                  x-show="expanded"
-                  x-cloak
-                  class="absolute left-28 z-20 transition transform -translate-x-1/2"
-                  x-transition:enter="duration-250 ease-out"
-                  x-transition:enter-start="opacity-0 -translate-y-8"
-                  x-transition:enter-end="opacity-100"
-                  x-transition:leave="duration-250 ease-in"
-                  x-transition:leave-start="opacity-100"
-                  x-transition:leave-end="opacity-0 -translate-y-8"
-                >
-                  <div class="mt-4 w-224 p-8 bg-white shadow-lg transform transition-transform origin-top" @click.away="expanded = false">
-                    <ul class="grid gap-6 relative sm:grid-cols-2 md:grid-cols-3">
-                      <li>
-                        <a href="/docs/11.x/starter-kits#laravel-breeze" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-breeze flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/breeze.min.svg" alt="Laravel Breeze Logo Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Breeze</div>
-                            <span class="text-gray-700 text-xs">Lightweight starter kit scaffolding for new applications with Blade or Inertia.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/billing" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-cashier flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/cashier.min.svg" alt="Laravel Cashier Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Cashier</div>
-                            <span class="text-gray-700 text-xs">Take the pain out of managing subscriptions on Stripe or Paddle.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/dusk" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-dusk flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/dusk.min.svg" alt="Laravel Dusk Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Dusk</div>
-                            <span class="text-gray-700 text-xs">Automated browser testing to ship your application with confidence.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/broadcasting" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-echo flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/echo.min.svg" alt="Laravel Echo Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Echo</div>
-                            <span class="text-gray-700 text-xs">Listen for WebSocket events broadcast by your Laravel application.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://envoyer.io" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-envoyer flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/envoyer.min.svg" alt="Envoyer Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Envoyer</div>
-                            <span class="text-gray-700 text-xs">Deploy your Laravel applications to customers with zero downtime.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://forge.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-forge flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/forge.min.svg" alt="Forge Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Forge</div>
-                            <span class="text-gray-700 text-xs">Server management doesn&#039;t have to be a nightmare.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://herd.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-herd flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/herd.min.svg" alt="Herd Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Herd</div>
-                            <span class="text-gray-700 text-xs">The fastest Laravel local dev environment - now for macOS and Windows.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/horizon" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-horizon flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/horizon.min.svg" alt="Laravel Horizon Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Horizon</div>
-                            <span class="text-gray-700 text-xs">Beautiful UI for monitoring your Redis driven Laravel queues.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://inertiajs.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-inertia flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/inertia.min.svg" alt="Inertia Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Inertia</div>
-                            <span class="text-gray-700 text-xs">Create modern single-page React and Vue apps using classic server-side routing.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://jetstream.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-jetstream flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/jetstream.min.svg" alt="Laravel Jetstream Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Jetstream</div>
-                            <span class="text-gray-700 text-xs">Robust starter kit including authentication and team management.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://livewire.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-livewire flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/livewire.min.svg" alt="Laravel Livewire Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Livewire</div>
-                            <span class="text-gray-700 text-xs">Build reactive, dynamic applications using Laravel and Blade.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://nova.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-nova flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/nova.min.svg" alt="Laravel Nova Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Nova</div>
-                            <span class="text-gray-700 text-xs">Thoughtfully designed administration panel for your Laravel applications.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/octane" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-octane flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/octane.min.svg" alt="Laravel Octane Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Octane</div>
-                            <span class="text-gray-700 text-xs">Supercharge your application&#039;s performance by keeping it in memory.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/pennant" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-pennant flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/pennant.min.svg" alt="Laravel Pennant Logo" class="w-9 h-9" width="36" height="36" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Pennant</div>
-                            <span class="text-gray-700 text-xs">A simple, lightweight library for managing feature flags.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/pint" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-pint flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/pint.min.svg" alt="Laravel Pint Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Pint</div>
-                            <span class="text-gray-700 text-xs">Opinionated PHP code style fixer for minimalists.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/prompts" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-prompts flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/prompts.min.svg" alt="Laravel Prompts Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Prompts</div>
-                            <span class="text-gray-700 text-xs">Beautiful and user-friendly forms for command-line applications.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://pulse.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-pulse flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/pulse.min.svg" alt="Laravel Pulse Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Pulse</div>
-                            <span class="text-gray-700 text-xs">At-a-glance insights into your application&#039;s performance and usage.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://reverb.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-reverb flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/reverb.min.svg" alt="Laravel Reverb Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Reverb</div>
-                            <span class="text-gray-700 text-xs">Blazing fast and scalable WebSockets for your application.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/sail" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-sail flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/sail.min.svg" alt="Laravel Sail Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Sail</div>
-                            <span class="text-gray-700 text-xs">Hand-crafted Laravel local development experience using Docker.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/sanctum" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-sanctum flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Sanctum</div>
-                            <span class="text-gray-700 text-xs">API and mobile application authentication without wanting to pull your hair out.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/scout" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-scout flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/scout.min.svg" alt="Laravel Scout Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Scout</div>
-                            <span class="text-gray-700 text-xs">Lightning fast full-text search for your application&#039;s Eloquent models.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/socialite" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-socialite flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/socialite.min.svg" alt="Laravel Socialite Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Socialite</div>
-                            <span class="text-gray-700 text-xs">Social authentication via Facebook, Twitter, GitHub, LinkedIn, and more.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://spark.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-spark flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/spark.min.svg" alt="Laravel Spark Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Spark</div>
-                            <span class="text-gray-700 text-xs">Launch your next business with our fully-featured, drop-in billing portal.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="/docs/11.x/telescope" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-telescope flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/telescope.min.svg" alt="Laravel Telescope Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Telescope</div>
-                            <span class="text-gray-700 text-xs">Debug your application using our debugging and insight UI.</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://vapor.laravel.com" class="flex">
-                          <div class="relative shrink-0 w-12 h-12 bg-vapor flex items-center justify-center rounded-lg overflow-hidden">
-                            <span class="absolute inset-0 w-full h-full bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
-                            <img src="assets/img/ecosystem/vapor.min.svg" alt="Laravel Vapor Logo" class="w-7 h-7" width="28" height="28" loading="lazy" />
-                          </div>
-                          <div class="ml-4 leading-5">
-                            <div class="text-gray-900">Vapor</div>
-                            <span class="text-gray-700 text-xs">Laravel Vapor is a serverless deployment platform for Laravel, powered by AWS.</span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
+
               <li><a href="https://laravel-news.com">News</a></li>
               <li><a href="https://partners.laravel.com">Partners</a></li>
               <li><a href="https://laravel.com/careers">Careers</a></li>
             </ul>
             <div class="flex-1 flex items-center justify-end">
               <button id="docsearch"></button>
-              <a class="group relative inline-flex border border-red-600 focus:outline-none hidden lg:ml-4 lg:inline-flex" href="/docs/11.x">
+
+              <a class="group relative inline-flex border border-red-600 focus:outline-none hidden lg:ml-4 lg:inline-flex" href="http://localhost/laravel-doc/">
                 <span
                   class="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"
                 >
@@ -648,7 +161,7 @@
                 <li><a class="block w-full py-3" href="https://laravel.com/careers">Careers</a></li>
 
                 <li class="flex sm:justify-center">
-                  <a class="group relative inline-flex border border-red-600 focus:outline-none mt-3 w-full max-w-md" href="/docs/11.x">
+                  <a class="group relative inline-flex border border-red-600 focus:outline-none mt-3 w-full max-w-md" href="http://localhost/laravel-doc/">
                     <span
                       class="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"
                     >
@@ -748,7 +261,7 @@
               Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.
             </p>
             <div class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
-              <a class="group relative inline-flex border border-red-500 focus:outline-none w-full sm:w-auto" href="/docs/11.x">
+              <a class="group relative inline-flex border border-red-500 focus:outline-none w-full sm:w-auto" href="http://localhost/laravel-doc/">
                 <span
                   class="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-white text-center font-bold uppercase bg-red-500 ring-1 ring-red-500 ring-offset-1 ring-offset-red-500 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"
                 >
@@ -899,7 +412,7 @@
                 Laravel values beauty. We love clean code just as much as you do. Simple, elegant syntax puts amazing functionality at your fingertips. Every feature has been thoughtfully considered to provide a wonderful developer
                 experience.
               </p>
-              <a class="group relative inline-flex border border-red-600 focus:outline-none mt-6" href="/docs/11.x">
+              <a class="group relative inline-flex border border-red-600 focus:outline-none mt-6" href="http://localhost/laravel-doc/">
                 <span
                   class="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"
                 >
@@ -1551,7 +1064,7 @@
 
         <p class="mt-12 text-gray-700 leading-relaxed max-w-3xl">
           We've just scratched the surface. Laravel has you covered for everything you will need to build a web application, including email verification, rate limiting, and custom console commands. Check out the
-          <a href="https://laravel.com/docs/11.x" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning.
+          <a href="https://laravel.comhttp://localhost/laravel-doc/" class="text-red-600 underline hover:no-underline">Laravel documentation</a> to keep learning.
         </p>
       </div>
     </div>
@@ -1725,7 +1238,7 @@
 
       <ul class="mt-10 relative grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <li>
-          <a href="/docs/11.x/starter-kits#laravel-breeze" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//starter-kits#laravel-breeze" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-breeze flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/breeze.min.svg" alt="Laravel Breeze Logo Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1737,7 +1250,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/billing" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//billing" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-cashier flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/cashier.min.svg" alt="Laravel Cashier Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1749,7 +1262,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/dusk" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//dusk" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-dusk flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/dusk.min.svg" alt="Laravel Dusk Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1761,7 +1274,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/broadcasting" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//broadcasting" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-echo flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/echo.min.svg" alt="Laravel Echo Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1797,7 +1310,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/horizon" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//horizon" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-horizon flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/horizon.min.svg" alt="Laravel Horizon Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1857,7 +1370,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/octane" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//octane" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-octane flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/octane.min.svg" alt="Laravel Octane Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1869,7 +1382,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/pennant" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//pennant" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-pennant flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/pennant.min.svg" alt="Laravel Pennant Logo" class="relative w-9 h-9" width="36" height="36" loading="lazy" />
@@ -1881,7 +1394,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/pint" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//pint" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-pint flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/pint.min.svg" alt="Laravel Pint Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1893,7 +1406,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/prompts" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//prompts" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-prompts flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/prompts.min.svg" alt="Laravel Prompts Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1929,7 +1442,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/sail" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//sail" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-sail flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/sail.min.svg" alt="Laravel Sail Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1941,7 +1454,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/sanctum" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//sanctum" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-sanctum flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/sanctum.min.svg" alt="Laravel Sanctum Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1953,7 +1466,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/scout" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//scout" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-scout flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/scout.min.svg" alt="Laravel Scout Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1965,7 +1478,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/socialite" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//socialite" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-socialite flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/socialite.min.svg" alt="Laravel Socialite Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -1989,7 +1502,7 @@
           </a>
         </li>
         <li>
-          <a href="/docs/11.x/telescope" class="flex p-4 border border-gray-200 border-opacity-60">
+          <a href="http://localhost/laravel-doc//telescope" class="flex p-4 border border-gray-200 border-opacity-60">
             <div class="relative shrink-0 bg-telescope flex items-center justify-center w-12 h-12 rounded-lg overflow-hidden">
               <span class="absolute w-full h-full inset-0 bg-gradient-to-b from-[rgba(255,255,255,.2)] to-[rgba(255,255,255,0)]"></span>
               <img src="assets/img/ecosystem/telescope.min.svg" alt="Laravel Telescope Logo" class="relative w-7 h-7" width="28" height="28" loading="lazy" />
@@ -2462,34 +1975,34 @@
             <div class="mt-5">
               <ul class="space-y-3 text-gray-700">
                 <li>
-                  <a href="/docs/11.x/releases" class="transition-colors hover:text-gray-600">Release Notes</a>
+                  <a href="http://localhost/laravel-doc//releases" class="transition-colors hover:text-gray-600">Release Notes</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/installation" class="transition-colors hover:text-gray-600">Getting Started</a>
+                  <a href="http://localhost/laravel-doc//installation" class="transition-colors hover:text-gray-600">Getting Started</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/routing" class="transition-colors hover:text-gray-600">Routing</a>
+                  <a href="http://localhost/laravel-doc//routing" class="transition-colors hover:text-gray-600">Routing</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/blade" class="transition-colors hover:text-gray-600">Blade Templates</a>
+                  <a href="http://localhost/laravel-doc//blade" class="transition-colors hover:text-gray-600">Blade Templates</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/authentication" class="transition-colors hover:text-gray-600">Authentication</a>
+                  <a href="http://localhost/laravel-doc//authentication" class="transition-colors hover:text-gray-600">Authentication</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/authorization" class="transition-colors hover:text-gray-600">Authorization</a>
+                  <a href="http://localhost/laravel-doc//authorization" class="transition-colors hover:text-gray-600">Authorization</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/artisan" class="transition-colors hover:text-gray-600">Artisan Console</a>
+                  <a href="http://localhost/laravel-doc//artisan" class="transition-colors hover:text-gray-600">Artisan Console</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/database" class="transition-colors hover:text-gray-600">Database</a>
+                  <a href="http://localhost/laravel-doc//database" class="transition-colors hover:text-gray-600">Database</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/eloquent" class="transition-colors hover:text-gray-600">Eloquent ORM</a>
+                  <a href="http://localhost/laravel-doc//eloquent" class="transition-colors hover:text-gray-600">Eloquent ORM</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/testing" class="transition-colors hover:text-gray-600">Testing</a>
+                  <a href="http://localhost/laravel-doc//testing" class="transition-colors hover:text-gray-600">Testing</a>
                 </li>
               </ul>
             </div>
@@ -2588,16 +2101,16 @@
             <div class="mt-5">
               <ul class="space-y-3 text-gray-700">
                 <li>
-                  <a href="/docs/11.x/starter-kits#laravel-breeze" class="transition-colors hover:text-gray-600">Breeze</a>
+                  <a href="http://localhost/laravel-doc//starter-kits#laravel-breeze" class="transition-colors hover:text-gray-600">Breeze</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/billing" class="transition-colors hover:text-gray-600">Cashier</a>
+                  <a href="http://localhost/laravel-doc//billing" class="transition-colors hover:text-gray-600">Cashier</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/dusk" class="transition-colors hover:text-gray-600">Dusk</a>
+                  <a href="http://localhost/laravel-doc//dusk" class="transition-colors hover:text-gray-600">Dusk</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/broadcasting" class="transition-colors hover:text-gray-600">Echo</a>
+                  <a href="http://localhost/laravel-doc//broadcasting" class="transition-colors hover:text-gray-600">Echo</a>
                 </li>
                 <li>
                   <a href="https://envoyer.io" class="transition-colors hover:text-gray-600">Envoyer</a>
@@ -2609,7 +2122,7 @@
                   <a href="https://herd.laravel.com" class="transition-colors hover:text-gray-600">Herd</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/horizon" class="transition-colors hover:text-gray-600">Horizon</a>
+                  <a href="http://localhost/laravel-doc//horizon" class="transition-colors hover:text-gray-600">Horizon</a>
                 </li>
                 <li>
                   <a href="https://inertiajs.com" class="transition-colors hover:text-gray-600">Inertia</a>
@@ -2624,16 +2137,16 @@
                   <a href="https://nova.laravel.com" class="transition-colors hover:text-gray-600">Nova</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/octane" class="transition-colors hover:text-gray-600">Octane</a>
+                  <a href="http://localhost/laravel-doc//octane" class="transition-colors hover:text-gray-600">Octane</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/pennant" class="transition-colors hover:text-gray-600">Pennant</a>
+                  <a href="http://localhost/laravel-doc//pennant" class="transition-colors hover:text-gray-600">Pennant</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/pint" class="transition-colors hover:text-gray-600">Pint</a>
+                  <a href="http://localhost/laravel-doc//pint" class="transition-colors hover:text-gray-600">Pint</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/prompts" class="transition-colors hover:text-gray-600">Prompts</a>
+                  <a href="http://localhost/laravel-doc//prompts" class="transition-colors hover:text-gray-600">Prompts</a>
                 </li>
                 <li>
                   <a href="https://pulse.laravel.com" class="transition-colors hover:text-gray-600">Pulse</a>
@@ -2642,22 +2155,22 @@
                   <a href="https://reverb.laravel.com" class="transition-colors hover:text-gray-600">Reverb</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/sail" class="transition-colors hover:text-gray-600">Sail</a>
+                  <a href="http://localhost/laravel-doc//sail" class="transition-colors hover:text-gray-600">Sail</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/sanctum" class="transition-colors hover:text-gray-600">Sanctum</a>
+                  <a href="http://localhost/laravel-doc//sanctum" class="transition-colors hover:text-gray-600">Sanctum</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/scout" class="transition-colors hover:text-gray-600">Scout</a>
+                  <a href="http://localhost/laravel-doc//scout" class="transition-colors hover:text-gray-600">Scout</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/socialite" class="transition-colors hover:text-gray-600">Socialite</a>
+                  <a href="http://localhost/laravel-doc//socialite" class="transition-colors hover:text-gray-600">Socialite</a>
                 </li>
                 <li>
                   <a href="https://spark.laravel.com" class="transition-colors hover:text-gray-600">Spark</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/telescope" class="transition-colors hover:text-gray-600">Telescope</a>
+                  <a href="http://localhost/laravel-doc//telescope" class="transition-colors hover:text-gray-600">Telescope</a>
                 </li>
                 <li>
                   <a href="https://vapor.laravel.com" class="transition-colors hover:text-gray-600">Vapor</a>
@@ -2693,7 +2206,7 @@
     </script>
 
     <!-- HubSpot -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/45240648.js"></script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="assets/js/45240648.js"></script>
 
     <div class="fixed">
       <input type="text" />
