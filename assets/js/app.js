@@ -7435,3 +7435,5 @@ window.Alpine = fn;
 fn.plugin(gl);
 fn.start();
 xf({ container: "#docsearch", appId: algolia_app_id, apiKey: algolia_search_key, indexName: "laravel", searchParameters: { facetFilters: ["version:" + window.version] } });
+
+

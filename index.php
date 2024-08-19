@@ -65,6 +65,7 @@
     <script type="text/javascript" src="assets/js/theme.js"></script>
   </head>
   <body x-data="{navIsOpen: false,}" class="w-full h-full font-sans antialiased text-gray-900 language-php">
+ 
     <a id="skip-to-content-link" href="#main-content" class="absolute bg-gray-100 px-4 py-2 top-3 left-3 text-gray-700 shadow-xl"> Skip to content </a>
     <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm">
       <div>
@@ -852,7 +853,7 @@
 
         <section class="flex-1 dark:bg-dark-700">
           <div class="max-w-screen-lg px-8 sm:px-16 lg:px-24">
-            <div class="flex flex-col items-end border-b border-gray-200 py-1 transition-colors dark:border-gray-700 lg:mt-8 lg:flex-row-reverse">
+            <div class="flex flex-col items-end border-b border-gray-200 py-1 transition-colors dark:border-gray-700 lg:mt-8 lg:flex-row-reverse" >
               <div class="hidden lg:flex items-center justify-center ml-8">
                 <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -875,6 +876,8 @@
                   </svg>
                 </button>
               </div>
+              
+
               <div class="w-full lg:w-40 lg:pl-12">
                 <div>
                   <label class="text-gray-600 text-xs tracking-widest uppercase dark:text-gray-500" for="version-switcher">Version</label>
@@ -899,16 +902,17 @@
                     <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none hidden dark:block" src="assets/img/drop_arrow.dark.min.svg" alt="" />
                   </div>
                 </div>
-              </div>
+              </div>        
+              
               <div class="relative mt-8 flex items-center justify-end w-full h-10 lg:mt-0">
-                <div class="flex-1 flex items-center">
-                  <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400 w-full"></button>
-                </div>
+                  <div class="flex-1 flex items-center">
+                    <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400 w-full"></button>
+                  </div>
               </div>
             </div>
 
             <section class="mt-8 md:mt-16">
-              <section class="docs_main max-w-prose">
+              <section class="docs_main max-w-prose" >
                 <div id="main-content">
                   <h1>Installation</h1>
                   <ul>
@@ -1390,13 +1394,14 @@
 
     <footer class="relative pt-12 dark:bg-dark-700">
       <div class="max-w-screen-2xl mx-auto w-full px-8">
-        <div>
+      
+        <!-- <div>
           <a href="/" class="inline-flex">
             <img class="w-16 h-16" src="assets/img/logomark.min.svg" alt="Laravel" loading="lazy" />
           </a>
-        </div>
+        </div> -->
 
-        <div class="mt-6 grid grid-cols-12 md:gap-x-8 gap-y-12 sm:mt-12">
+        <!-- <div class="mt-6 grid grid-cols-12 md:gap-x-8 gap-y-12 sm:mt-12">
           <div class="col-span-12 lg:col-span-4">
             <p class="max-w-sm text-xs text-gray-700 sm:text-sm dark:text-gray-500">
               Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing
@@ -1603,12 +1608,16 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="mt-10 border-t pt-6 pb-16 border-gray-200 dark:border-dark-500">
+        </div> -->
+        <div class="mt-10 border-t pt-6 pb-12 border-gray-200 dark:border-dark-500">
           <p class="text-xs text-gray-700 text-center dark:text-gray-400">Copyright &copy; 2024 <a href="http://localhost/laravel-doc/">Galih Agus Saputra</a>.</p>
         </div>
       </div>
     </footer>
+
+    <a class="btnScrollToTop items-center justify-center" style="position: fixed; bottom: 15%; right: 25%; display: none;">
+      <img src="./assets/img/lightbulb.min.svg" class="opacity-75">
+    </a>
 
     <script>
       var algolia_app_id = "E3MIRNPJH5";
@@ -1624,6 +1633,22 @@
         g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
         s.parentNode.insertBefore(g, s);
       })(document, "script");
+
+
+      const btnScrollToTop = document.querySelector(".btnScrollToTop");
+      // scroll to top of page when button clicked
+      btnScrollToTop.addEventListener("click", (e) => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // toggle 'scroll to top' based on scroll position
+      window.addEventListener("scroll", (e) => {
+        btnScrollToTop.style.display = window.scrollY > 400 ? "block" : "none";
+      });
     </script>
 
     <!-- HubSpot -->

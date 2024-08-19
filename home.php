@@ -40,11 +40,10 @@
     <link rel="preconnect" href="https://E3MIRNPJH5-dsn.algolia.net" crossorigin />
 
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css" />
-    <link rel="preload" as="style" href="assets/css/home.css" />
-    <link rel="modulepreload" href="assets/js/home.js" />
-    <link rel="stylesheet" href="assets/css/home.css" />
-    <script type="module" src="assets/js/home.js"></script>
-    
+    <link rel="preload" as="style" href="assets/css/app.css" />
+    <link rel="modulepreload" href="assets/js/app.js" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <script type="module" src="assets/js/app.js"></script>
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
     <!-- / Fathom -->
@@ -53,10 +52,27 @@
     <script async src="https://tag.clearbitscripts.com/v1/pk_97d2bf69f817feb07be42fcda1460119/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
 
     <script>
-      const alwaysLightMode = true;
+      const alwaysLightMode = false;
     </script>
 
     <script>
+      window.toDarkMode = () => {
+        (localStorage.theme = "dark"), window.updateTheme();
+      };
+      window.toLightMode = () => {
+        (localStorage.theme = "light"), window.updateTheme();
+      };
+      window.toSystemMode = () => {
+        (localStorage.theme = "system"), window.updateTheme();
+      };
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (r) => {
+        localStorage.theme === "system" &&
+          (r.matches
+            ? (document.documentElement.classList.add("dark"), document.documentElement.setAttribute("data-theme", "dark"))
+            : (document.documentElement.classList.remove("dark"), document.documentElement.setAttribute("data-theme", "light"))),
+          updateThemeAndSchemeColor();
+      });
+
       function updateTheme() {
         if (!("theme" in localStorage)) {
           localStorage.theme = "system";
@@ -111,7 +127,7 @@
   <body x-data="{navIsOpen: false,}" class="w-full h-full font-sans antialiased text-gray-900 language-php" data-instant-intensity="0">
     <div class="absolute top-0 w-full">
       <header x-trap.inert.noscroll="navIsOpen" class="main-header relative z-50 text-gray-700" @keydown.window.escape="navIsOpen = false" @click.away="navIsOpen = false">
-        <div class="relative max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6 fixed">
+        <div class="relative mx-auto w-full py-4 transition duration-200 lg:py-6 bg-white dark:bg-dark-700 border-b-transparent" style="position: fixed;">
           <div class="max-w-screen-xl mx-auto px-5 flex items-center justify-between">
             <div class="flex-1">
               <a href="/" class="inline-flex items-center">
@@ -130,9 +146,30 @@
             <div class="flex-1 flex items-center justify-end">
               <button id="docsearch"></button>
 
+                <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+                  </svg>
+                </button>
+                <button id="header__moon" onclick="toLightMode()" title="Switch to light mode" class="relative w-10 h-10 focus:outline-none focus:shadow-outline">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z"
+                    />
+                  </svg>
+                </button>
+                <button id="header__indeterminate" onclick="toDarkMode()" title="Switch to dark mode" class="relative w-10 h-10 focus:outline-none focus:shadow-outline">
+                  <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20V4Z" />
+                  </svg>
+                </button>
+
               <a class="group relative inline-flex border border-red-600 focus:outline-none hidden lg:ml-4 lg:inline-flex" href="http://localhost/laravel-doc/">
                 <span
-                  class="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase bg-white ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"
+                  class="w-full inline-flex items-center justify-center self-stretch px-4 py-2 text-sm text-red-600 text-center font-bold uppercase  ring-1 ring-red-600 ring-offset-1 transform transition-transform group-hover:-translate-y-1 group-hover:-translate-x-1 group-focus:-translate-y-1 group-focus:-translate-x-1"
                 >
                   Documentation
                 </span>
@@ -619,37 +656,35 @@
           Out of the box, Laravel has elegant solutions for the common features needed by all modern web applications. It's time to start building amazing applications and stop wasting time searching for packages and reinventing the wheel.
         </p>
 
-        <div
-          x-data="{
-        tab: null,
-        tabs: [],
-        scrolledLeft: true,
-        scrolledRight: false,
-        init() {
-            window.addEventListener('hashchange', () => this.changeTab(location.hash.substring(1)))
+        <div x-data="{
+                tab: null,
+                tabs: [],
+                scrolledLeft: true,
+                scrolledRight: false,
+                init() {
+                    window.addEventListener('hashchange', () => this.changeTab(location.hash.substring(1)))
 
-            this.updateScrollPosition()
-        },
-        changeTab(tab) {
-            if (this.tabs.includes(tab)) {
-                this.tab = tab
-                history.replaceState(null, null, '#' + tab)
-            }
-        },
-        scrollLeft() {
-            document.getElementById('feature-nav').scrollBy({ left: -200, behavior: 'smooth' })
-        },
-        scrollRight() {
-            document.getElementById('feature-nav').scrollBy({ left: 200, behavior: 'smooth' })
-        },
-        updateScrollPosition(event) {
-            const el = document.getElementById('feature-nav')
-            this.scrolledLeft = el.scrollLeft === 0
-            this.scrolledRight = (el.scrollWidth - el.offsetWidth) === el.scrollLeft
-        },
-    }"
-          class="z-10 relative lg:h-[550px] max-w-[1100px] mt-12 flex flex-col lg:flex-row bg-white border border-gray-200 overflow-hidden"
-        >
+                    this.updateScrollPosition()
+                },
+                changeTab(tab) {
+                    if (this.tabs.includes(tab)) {
+                        this.tab = tab
+                        history.replaceState(null, null, '#' + tab)
+                    }
+                },
+                scrollLeft() {
+                    document.getElementById('feature-nav').scrollBy({ left: -200, behavior: 'smooth' })
+                },
+                scrollRight() {
+                    document.getElementById('feature-nav').scrollBy({ left: 200, behavior: 'smooth' })
+                },
+                updateScrollPosition(event) {
+                    const el = document.getElementById('feature-nav')
+                    this.scrolledLeft = el.scrollLeft === 0
+                    this.scrolledRight = (el.scrollWidth - el.offsetWidth) === el.scrollLeft
+                },
+            }"
+          class="z-10 relative lg:h-[550px] max-w-[1100px] mt-12 flex flex-col lg:flex-row bg-white border border-gray-200 overflow-hidden">
           <nav class="w-full flex relative lg:max-w-xs">
             <div class="hidden lg:block pointer-events-none absolute top-0 w-5 lg:w-full h-full lg:h-8 bg-gradient-to-r lg:bg-gradient-to-b from-white"></div>
             <div class="hidden lg:block pointer-events-none absolute bottom-0 right-0 z-10 w-5 lg:w-full h-full lg:h-6 bg-gradient-to-l lg:bg-gradient-to-t from-white"></div>
