@@ -527,7 +527,7 @@ video {
   left: 0;
   width: 9px;
   height: 10px;
-  background: url(../img/ul_marker.min.svg) no-repeat 50%;
+  background: url(/img/ul_marker.min.svg) no-repeat 50%;
   background-size: contain;
 }
 :not(pre) > code {
@@ -711,7 +711,7 @@ pre code.torchlight .line-number {
   left: 0;
   width: 0.5rem;
   height: 0.5rem;
-  background: url(/img/icons/active_marker.min.svg) no-repeat center;
+  background: url(/img/active_marker.min.svg) no-repeat center;
 }
 .docs_sidebar ul .sub--on > h2 {
   margin-bottom: 1em;
@@ -748,7 +748,7 @@ pre code.torchlight .line-number {
   --docsearch-footer-shadow: 0 -1px 0 0 #e0e3e8, 0 -3px 6px 0 rgba(69, 98, 155, 0.12);
 }
 html[data-theme="dark"] {
-  --docsearch-text-color: #ffffff;
+  --docsearch-text-color: #f5f6f7;
   --docsearch-container-background: rgba(9, 10, 17, 0.8);
   --docsearch-modal-background: #15172a;
   --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;
@@ -1462,7 +1462,7 @@ html[data-theme="dark"]:root {
   left: 0;
   width: 9px;
   height: 10px;
-  background: url(../img/ul_marker.min.svg) no-repeat center;
+  background: url(/img/ul_marker.min.svg) no-repeat center;
   background-size: contain;
 }
 .docs_main h1 + ul {
@@ -1916,8 +1916,8 @@ html[data-theme="dark"]:root {
 .max-h-full {
   max-height: 100%;
 }
-.min-h-0 {
-  min-height: 0px;
+.max-h-screen {
+  max-height: 100vh;
 }
 .min-h-full {
   min-height: 100%;
@@ -2286,9 +2286,6 @@ html[data-theme="dark"]:root {
 }
 .overflow-y-auto {
   overflow-y: auto;
-}
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -4114,6 +4111,9 @@ html[data-theme="dark"]:root {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -5203,9 +5203,6 @@ html[color-theme="system"] #header__indeterminate {
     --tw-divide-y-reverse: 0;
     border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-  }
-  .lg\:overflow-hidden {
-    overflow: hidden;
   }
   .lg\:overflow-y-auto {
     overflow-y: auto;

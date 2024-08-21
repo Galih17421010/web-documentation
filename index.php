@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Website Documentation</title>
+    <title>Installation - Laravel 11.x - The PHP Framework For Web Artisans</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-    <link rel="canonical" href="/" />
+    <link rel="canonical" href="https://laravel.com/installation" />
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Laravel - The PHP Framework For Web Artisans" />
@@ -15,83 +15,148 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="https://laravel.com/" />
     <meta property="og:title" content="Laravel - The PHP Framework For Web Artisans" />
     <meta property="og:description" content="Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things." />
-    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta property="og:image" content="./assets/img/og-image.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="/" />
+    <meta property="twitter:url" content="https://laravel.com/" />
     <meta property="twitter:title" content="Laravel - The PHP Framework For Web Artisans" />
     <meta property="twitter:description" content="Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things." />
-    <meta property="twitter:image" content="assets/img/og-image.jpg" />
+    <meta property="twitter:image" content="./assets/img/og-image.jpg" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#ff2d20" />
-    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#ff2d20" />
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#ff2d20" />
-    <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml" />
+    <meta name="msapplication-config" content="./assets/img/favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="color-scheme" content="light" />
 
     <link rel="preconnect" href="https://E3MIRNPJH5-dsn.algolia.net" crossorigin />
 
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css" /> -->
-    <link rel="stylesheet" href="assets/css/ins2wgm.css" />
-    <link rel="preload" as="style" href="assets/css/app.css" />
-    <link rel="modulepreload" href="assets/js/app.js" />
-    <link rel="modulepreload" href="assets/js/docs.js" />
-    <link rel="stylesheet" href="assets/css/app.css" />
-    <script type="module" src="assets/js/app.js"></script>
-    <script type="module" src="assets/js/docs.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css" />
+
+    <link rel="preload" as="style" href="./assets/css/app.css" />
+    <link rel="modulepreload" href="./assets/js/app.js" />
+    <link rel="modulepreload" href="./assets/js/docs.js" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/docs.js"></script>
+
     <!-- Fathom - beautiful, simple website analytics -->
-    <!-- <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script> -->
-    <!-- <script src="assets/js/script.js" data-site="DVMEKBYF" defer></script> -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
     <!-- / Fathom -->
 
     <!-- Clearbit -->
-    <!-- <script async src="https://tag.clearbitscripts.com/v1/pk_97d2bf69f817feb07be42fcda1460119/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script> -->
-    <script async src="assets/js/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
+    <script async src="https://tag.clearbitscripts.com/v1/pk_97d2bf69f817feb07be42fcda1460119/tags.js" referrerpolicy="strict-origin-when-cross-origin"></script>
 
     <script>
       const alwaysLightMode = false;
     </script>
 
-    <script type="text/javascript" src="assets/js/theme.js"></script>
-  </head>
-  <body x-data="{navIsOpen: false,}" class="w-full h-full font-sans antialiased text-gray-900 language-php">
- 
-    <a id="skip-to-content-link" href="#main-content" class="absolute bg-gray-100 px-4 py-2 top-3 left-3 text-gray-700 shadow-xl"> Skip to content </a>
-    <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm">
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
-          <path d="M7 8v1" />
-          <path d="M17 8v1" />
-          <path d="M12.5 4c-.654 1.486 -1.26 3.443 -1.5 9h2.5c-.19 2.867 .094 5.024 .5 7" />
-          <path d="M7 15.5c3.667 2 6.333 2 10 0" />
-        </svg>
-      </div>
-      <div class="mt-px ml-1">Documentation website <a href="http://localhost/laravel-doc/" class="underline">Galih Agus Saputra</a>.</div>
-    </div>
+    <script>
+      function updateTheme() {
+        if (!("theme" in localStorage)) {
+          localStorage.theme = "system";
+        }
 
-    <div class="relative overflow-auto dark:bg-dark-700" id="docsScreen">
+        switch (localStorage.theme) {
+          case "system":
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+              document.documentElement.classList.add("dark");
+              document.documentElement.setAttribute("data-theme", "dark");
+            } else {
+              document.documentElement.classList.remove("dark");
+              document.documentElement.setAttribute("data-theme", "light");
+            }
+
+            document.documentElement.setAttribute("color-theme", "system");
+            break;
+
+          case "dark":
+            document.documentElement.classList.add("dark");
+            document.documentElement.setAttribute("color-theme", "dark");
+            document.documentElement.setAttribute("data-theme", "dark");
+            break;
+
+          case "light":
+            document.documentElement.classList.remove("dark");
+            document.documentElement.setAttribute("color-theme", "light");
+            document.documentElement.setAttribute("data-theme", "light");
+            break;
+        }
+
+        updateThemeAndSchemeColor();
+      }
+
+      function updateThemeAndSchemeColor() {
+        if (!alwaysLightMode) {
+          if (document.documentElement.classList.contains("dark")) {
+            document.querySelector('meta[name="color-scheme"]').setAttribute("content", "dark");
+            document.querySelector('meta[name="theme-color"]').setAttribute("content", "#171923");
+
+            return;
+          }
+
+          document.querySelector('meta[name="color-scheme"]').setAttribute("content", "light");
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", "#ffffff");
+        }
+      }
+
+      updateTheme();
+    </script>
+  </head>
+  <body
+    x-data="{
+        navIsOpen: false,
+    }"
+    class="w-full h-full font-sans antialiased text-gray-900 language-php"
+    data-instant-intensity="0"
+  >
+    <a id="skip-to-content-link" href="#main-content" class="absolute bg-gray-100 px-4 py-2 top-3 left-3 text-gray-700 shadow-xl"> Skip to content </a>
+
+    <div class="hidden lg:flex items-center justify-center bg-gradient-to-b from-red-500 to-red-600 p-2 text-center text-white text-sm h-9">
+      <template id="news-herd">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" stroke-linecap="round" fill="none" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 4m0 1a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1z" />
+            <path d="M7 8v1" />
+            <path d="M17 8v1" />
+            <path d="M12.5 4c-.654 1.486 -1.26 3.443 -1.5 9h2.5c-.19 2.867 .094 5.024 .5 7" />
+            <path d="M7 15.5c3.667 2 6.333 2 10 0" />
+          </svg>
+        </div>
+
+        <div class="mt-px ml-1">Get started with Galih <a href="https://github.com/Galih17421010" class="underline">Galih</a>.</div>
+      </template>
+    </div>
+    <script>
+      const activeNewsTemplate = document.getElementById(
+        "news-" + JSON.parse("[\u0022herd\u0022]")[Math.floor(Math.random() * 1)]
+      );
+
+      activeNewsTemplate.replaceWith(activeNewsTemplate.content);
+    </script>
+
+    <div class="relative dark:bg-dark-700" id="docsScreen">
       <div class="relative lg:flex lg:items-start">
         <aside
-          class="hidden fixed top-0 bottom-0 left-0 z-20 h-full w-16 bg-gradient-to-b from-gray-100 to-white transition-all duration-300 overflow-hidden lg:sticky lg:w-80 lg:shrink-0 lg:flex lg:flex-col lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:from-dark-800 dark:to-dark-700"
+          class="hidden fixed top-0 bottom-0 left-0 z-20 w-16 bg-gradient-to-b from-gray-100 to-white transition-all duration-300 lg:sticky lg:w-80 lg:shrink-0 lg:flex lg:flex-col lg:justify-end lg:items-end 2xl:max-w-lg 2xl:w-full dark:from-dark-800 dark:to-dark-700"
         >
-          <div class="relative min-h-0 flex-1 flex flex-col xl:w-80">
-            <a href="http://localhost/laravel-doc/" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
-              <img class="w-8 h-8 shrink-0 transition-all duration-300 lg:w-12 lg:h-12" src="assets/img/logomark.min.svg" alt="Laravel" width="50" height="52" />
-              <img src="assets/img/logotype.min.svg" alt="Laravel" class="hidden ml-4 lg:block" width="114" height="29" />
+          <div class="relative max-h-screen overflow-auto flex-1 flex flex-col xl:w-80">
+            <a href="/" class="flex items-center py-8 px-4 lg:px-8 xl:px-16">
+              <img class="w-8 h-8 shrink-0 transition-all duration-300 lg:w-12 lg:h-12" src="./assets/img/logomark.min.svg" alt="Laravel" width="50" height="52" />
+              <img src="./assets/img/logotype.min.svg" alt="Laravel" class="hidden ml-4 lg:block" width="114" height="29" />
             </a>
-            <div class="overflow-y-auto overflow-x-hidden px-4 lg:overflow-hidden lg:px-8 xl:px-16">
+            <div class="px-4 pb-10 lg:px-8 xl:px-16">
               <nav id="indexed-nav" class="hidden lg:block lg:mt-4">
                 <div class="docs_sidebar">
                   <ul>
@@ -99,36 +164,36 @@
                       <h2>Prologue</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/releases">Release Notes</a>
+                          <a href="/releases">Release Notes</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/upgrade">Upgrade Guide</a>
+                          <a href="/upgrade">Upgrade Guide</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/contributions">Contribution Guide</a>
+                          <a href="/contributions">Contribution Guide</a>
                         </li>
                       </ul>
                     </li>
-                    <li>
+                    <li class="sub--on">
                       <h2>Getting Started</h2>
                       <ul>
-                        <li>
-                          <a href="/docs/11.x/installation">Installation</a>
+                        <li class="active">
+                          <a href="/installation">Installation</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/configuration">Configuration</a>
+                          <a href="/configuration">Configuration</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/structure">Directory Structure</a>
+                          <a href="/structure">Directory Structure</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/frontend">Frontend</a>
+                          <a href="/frontend">Frontend</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/starter-kits">Starter Kits</a>
+                          <a href="/starter-kits">Starter Kits</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/deployment">Deployment</a>
+                          <a href="/deployment">Deployment</a>
                         </li>
                       </ul>
                     </li>
@@ -136,16 +201,16 @@
                       <h2>Architecture Concepts</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/lifecycle">Request Lifecycle</a>
+                          <a href="/lifecycle">Request Lifecycle</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/container">Service Container</a>
+                          <a href="/container">Service Container</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/providers">Service Providers</a>
+                          <a href="/providers">Service Providers</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/facades">Facades</a>
+                          <a href="/facades">Facades</a>
                         </li>
                       </ul>
                     </li>
@@ -153,46 +218,46 @@
                       <h2>The Basics</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/routing">Routing</a>
+                          <a href="/routing">Routing</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/middleware">Middleware</a>
+                          <a href="/middleware">Middleware</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/csrf">CSRF Protection</a>
+                          <a href="/csrf">CSRF Protection</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/controllers">Controllers</a>
+                          <a href="/controllers">Controllers</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/requests">Requests</a>
+                          <a href="/requests">Requests</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/responses">Responses</a>
+                          <a href="/responses">Responses</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/views">Views</a>
+                          <a href="/views">Views</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/blade">Blade Templates</a>
+                          <a href="/blade">Blade Templates</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/vite">Asset Bundling</a>
+                          <a href="/vite">Asset Bundling</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/urls">URL Generation</a>
+                          <a href="/urls">URL Generation</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/session">Session</a>
+                          <a href="/session">Session</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/validation">Validation</a>
+                          <a href="/validation">Validation</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/errors">Error Handling</a>
+                          <a href="/errors">Error Handling</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/logging">Logging</a>
+                          <a href="/logging">Logging</a>
                         </li>
                       </ul>
                     </li>
@@ -200,61 +265,61 @@
                       <h2>Digging Deeper</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/artisan">Artisan Console</a>
+                          <a href="/artisan">Artisan Console</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/broadcasting">Broadcasting</a>
+                          <a href="/broadcasting">Broadcasting</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/cache">Cache</a>
+                          <a href="/cache">Cache</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/collections">Collections</a>
+                          <a href="/collections">Collections</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/context">Context</a>
+                          <a href="/context">Context</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/contracts">Contracts</a>
+                          <a href="/contracts">Contracts</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/events">Events</a>
+                          <a href="/events">Events</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/filesystem">File Storage</a>
+                          <a href="/filesystem">File Storage</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/helpers">Helpers</a>
+                          <a href="/helpers">Helpers</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/http-client">HTTP Client</a>
+                          <a href="/http-client">HTTP Client</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/localization">Localization</a>
+                          <a href="/localization">Localization</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/mail">Mail</a>
+                          <a href="/mail">Mail</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/notifications">Notifications</a>
+                          <a href="/notifications">Notifications</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/packages">Package Development</a>
+                          <a href="/packages">Package Development</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/processes">Processes</a>
+                          <a href="/processes">Processes</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/queues">Queues</a>
+                          <a href="/queues">Queues</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/rate-limiting">Rate Limiting</a>
+                          <a href="/rate-limiting">Rate Limiting</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/strings">Strings</a>
+                          <a href="/strings">Strings</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/scheduling">Task Scheduling</a>
+                          <a href="/scheduling">Task Scheduling</a>
                         </li>
                       </ul>
                     </li>
@@ -262,22 +327,22 @@
                       <h2>Security</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/authentication">Authentication</a>
+                          <a href="/authentication">Authentication</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/authorization">Authorization</a>
+                          <a href="/authorization">Authorization</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/verification">Email Verification</a>
+                          <a href="/verification">Email Verification</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/encryption">Encryption</a>
+                          <a href="/encryption">Encryption</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/hashing">Hashing</a>
+                          <a href="/hashing">Hashing</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/passwords">Password Reset</a>
+                          <a href="/passwords">Password Reset</a>
                         </li>
                       </ul>
                     </li>
@@ -285,22 +350,22 @@
                       <h2>Database</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/database">Getting Started</a>
+                          <a href="/database">Getting Started</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/queries">Query Builder</a>
+                          <a href="/queries">Query Builder</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/pagination">Pagination</a>
+                          <a href="/pagination">Pagination</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/migrations">Migrations</a>
+                          <a href="/migrations">Migrations</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/seeding">Seeding</a>
+                          <a href="/seeding">Seeding</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/redis">Redis</a>
+                          <a href="/redis">Redis</a>
                         </li>
                       </ul>
                     </li>
@@ -308,25 +373,25 @@
                       <h2>Eloquent ORM</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/eloquent">Getting Started</a>
+                          <a href="/eloquent">Getting Started</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/eloquent-relationships">Relationships</a>
+                          <a href="/eloquent-relationships">Relationships</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/eloquent-collections">Collections</a>
+                          <a href="/eloquent-collections">Collections</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/eloquent-mutators">Mutators / Casts</a>
+                          <a href="/eloquent-mutators">Mutators / Casts</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/eloquent-resources">API Resources</a>
+                          <a href="/eloquent-resources">API Resources</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/eloquent-serialization">Serialization</a>
+                          <a href="/eloquent-serialization">Serialization</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/eloquent-factories">Factories</a>
+                          <a href="/eloquent-factories">Factories</a>
                         </li>
                       </ul>
                     </li>
@@ -334,22 +399,22 @@
                       <h2>Testing</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/testing">Getting Started</a>
+                          <a href="/testing">Getting Started</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/http-tests">HTTP Tests</a>
+                          <a href="/http-tests">HTTP Tests</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/console-tests">Console Tests</a>
+                          <a href="/console-tests">Console Tests</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/dusk">Browser Tests</a>
+                          <a href="/dusk">Browser Tests</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/database-testing">Database</a>
+                          <a href="/database-testing">Database</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/mocking">Mocking</a>
+                          <a href="/mocking">Mocking</a>
                         </li>
                       </ul>
                     </li>
@@ -357,79 +422,79 @@
                       <h2>Packages</h2>
                       <ul>
                         <li>
-                          <a href="/docs/11.x/starter-kits#laravel-breeze">Breeze</a>
+                          <a href="/starter-kits#laravel-breeze">Breeze</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/billing">Cashier (Stripe)</a>
+                          <a href="/billing">Cashier (Stripe)</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/cashier-paddle">Cashier (Paddle)</a>
+                          <a href="/cashier-paddle">Cashier (Paddle)</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/dusk">Dusk</a>
+                          <a href="/dusk">Dusk</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/envoy">Envoy</a>
+                          <a href="/envoy">Envoy</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/fortify">Fortify</a>
+                          <a href="/fortify">Fortify</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/folio">Folio</a>
+                          <a href="/folio">Folio</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/homestead">Homestead</a>
+                          <a href="/homestead">Homestead</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/horizon">Horizon</a>
+                          <a href="/horizon">Horizon</a>
                         </li>
                         <li>
-                          <a href="http://localhost/laravel-doc/">Jetstream</a>
+                          <a href="https://jetstream.laravel.com">Jetstream</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/mix">Mix</a>
+                          <a href="/mix">Mix</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/octane">Octane</a>
+                          <a href="/octane">Octane</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/passport">Passport</a>
+                          <a href="/passport">Passport</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/pennant">Pennant</a>
+                          <a href="/pennant">Pennant</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/pint">Pint</a>
+                          <a href="/pint">Pint</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/precognition">Precognition</a>
+                          <a href="/precognition">Precognition</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/prompts">Prompts</a>
+                          <a href="/prompts">Prompts</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/pulse">Pulse</a>
+                          <a href="/pulse">Pulse</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/reverb">Reverb</a>
+                          <a href="/reverb">Reverb</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/sail">Sail</a>
+                          <a href="/sail">Sail</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/sanctum">Sanctum</a>
+                          <a href="/sanctum">Sanctum</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/scout">Scout</a>
+                          <a href="/scout">Scout</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/socialite">Socialite</a>
+                          <a href="/socialite">Socialite</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/telescope">Telescope</a>
+                          <a href="/telescope">Telescope</a>
                         </li>
                         <li>
-                          <a href="/docs/11.x/valet">Valet</a>
+                          <a href="/valet">Valet</a>
                         </li>
                       </ul>
                     </li>
@@ -440,9 +505,41 @@
                 </div>
               </nav>
 
-              <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
-                <span class="font-medium">Laravel Vapor:</span> experience extreme scale on a dedicated serverless platform for Laravel. <a class="underline text-red-600" href="http://localhost/laravel-doc/">Sign up now!</a>.
-              </div>
+              <template id="promote-forge">
+                <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
+                  <span class="font-medium">Laravel Forge:</span> create and manage PHP 8 servers. Deploy your Laravel applications in seconds. <a class="underline text-red-600" href="https://forge.laravel.com">Sign up now!</a>.
+                </div>
+              </template>
+
+              <template id="promote-vapor">
+                <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
+                  <span class="font-medium">Laravel Vapor:</span> experience extreme scale on a dedicated serverless platform for Laravel. <a class="underline text-red-600" href="https://vapor.laravel.com">Sign up now!</a>.
+                </div>
+              </template>
+
+              <template id="promote-nova">
+                <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
+                  <span class="font-medium">Laravel Nova:</span> The next generation of Nova is <a class="underline text-red-600" href="https://nova.laravel.com">now available</a>.
+                </div>
+              </template>
+
+              <template id="promote-pulse">
+                <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
+                  <span class="font-medium">Laravel Pulse:</span> How's your health? Check your application's vital signs using <a href="https://pulse.laravel.com" class="underline text-red-600">Laravel Pulse</a>.
+                </div>
+              </template>
+
+              <template id="promote-reverb">
+                <div class="mt-4 px-3 py-2 border-dashed border-gray-200 border rounded-lg text-xs leading-loose text-gray-700 lg:block dark:border-gray-400 dark:text-gray-200">
+                  <span class="font-medium">Laravel Reverb:</span> You can easily build dynamic, real-time Laravel applications using WebSockets. <a href="https://reverb.laravel.com" class="underline text-red-600">Laravel Reverb</a> is now
+                  available!
+                </div>
+              </template>
+              <script>
+                const activePromotionTemplate = document.getElementById("promote-" + JSON.parse("[\u0022forge\u0022,\u0022vapor\u0022,\u0022nova\u0022,\u0022pulse\u0022,\u0022reverb\u0022]")[Math.floor(Math.random() * 5)]);
+
+                activePromotionTemplate.replaceWith(activePromotionTemplate.content);
+              </script>
             </div>
           </div>
         </aside>
@@ -451,8 +548,8 @@
           <div class="relative mx-auto w-full py-10 bg-white transition duration-200 dark:bg-dark-700">
             <div class="mx-auto px-8 sm:px-16 flex items-center justify-between">
               <a href="/" class="flex items-center">
-                <img class="" src="assets/img/logomark.min.svg" alt="Laravel" />
-                <img class="hidden ml-5 sm:block" src="assets/img/logotype.min.svg" alt="Laravel" />
+                <img class="" src="./assets/img/logomark.min.svg" alt="Laravel" width="50" height="52" />
+                <img class="hidden ml-5 sm:block" src="./assets/img/logotype.min.svg" alt="Laravel" width="114" height="29" />
               </a>
               <div class="flex-1 flex items-center justify-end">
                 <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
@@ -508,36 +605,36 @@
                     <h2>Prologue</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/releases">Release Notes</a>
+                        <a href="/releases">Release Notes</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/upgrade">Upgrade Guide</a>
+                        <a href="/upgrade">Upgrade Guide</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/contributions">Contribution Guide</a>
+                        <a href="/contributions">Contribution Guide</a>
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  <li class="sub--on">
                     <h2>Getting Started</h2>
                     <ul>
-                      <li>
-                        <a href="/docs/11.x/installation">Installation</a>
+                      <li class="active">
+                        <a href="/installation">Installation</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/configuration">Configuration</a>
+                        <a href="/configuration">Configuration</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/structure">Directory Structure</a>
+                        <a href="/structure">Directory Structure</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/frontend">Frontend</a>
+                        <a href="/frontend">Frontend</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/starter-kits">Starter Kits</a>
+                        <a href="/starter-kits">Starter Kits</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/deployment">Deployment</a>
+                        <a href="/deployment">Deployment</a>
                       </li>
                     </ul>
                   </li>
@@ -545,16 +642,16 @@
                     <h2>Architecture Concepts</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/lifecycle">Request Lifecycle</a>
+                        <a href="/lifecycle">Request Lifecycle</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/container">Service Container</a>
+                        <a href="/container">Service Container</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/providers">Service Providers</a>
+                        <a href="/providers">Service Providers</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/facades">Facades</a>
+                        <a href="/facades">Facades</a>
                       </li>
                     </ul>
                   </li>
@@ -562,46 +659,46 @@
                     <h2>The Basics</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/routing">Routing</a>
+                        <a href="/routing">Routing</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/middleware">Middleware</a>
+                        <a href="/middleware">Middleware</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/csrf">CSRF Protection</a>
+                        <a href="/csrf">CSRF Protection</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/controllers">Controllers</a>
+                        <a href="/controllers">Controllers</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/requests">Requests</a>
+                        <a href="/requests">Requests</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/responses">Responses</a>
+                        <a href="/responses">Responses</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/views">Views</a>
+                        <a href="/views">Views</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/blade">Blade Templates</a>
+                        <a href="/blade">Blade Templates</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/vite">Asset Bundling</a>
+                        <a href="/vite">Asset Bundling</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/urls">URL Generation</a>
+                        <a href="/urls">URL Generation</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/session">Session</a>
+                        <a href="/session">Session</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/validation">Validation</a>
+                        <a href="/validation">Validation</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/errors">Error Handling</a>
+                        <a href="/errors">Error Handling</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/logging">Logging</a>
+                        <a href="/logging">Logging</a>
                       </li>
                     </ul>
                   </li>
@@ -609,61 +706,61 @@
                     <h2>Digging Deeper</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/artisan">Artisan Console</a>
+                        <a href="/artisan">Artisan Console</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/broadcasting">Broadcasting</a>
+                        <a href="/broadcasting">Broadcasting</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/cache">Cache</a>
+                        <a href="/cache">Cache</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/collections">Collections</a>
+                        <a href="/collections">Collections</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/context">Context</a>
+                        <a href="/context">Context</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/contracts">Contracts</a>
+                        <a href="/contracts">Contracts</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/events">Events</a>
+                        <a href="/events">Events</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/filesystem">File Storage</a>
+                        <a href="/filesystem">File Storage</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/helpers">Helpers</a>
+                        <a href="/helpers">Helpers</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/http-client">HTTP Client</a>
+                        <a href="/http-client">HTTP Client</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/localization">Localization</a>
+                        <a href="/localization">Localization</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/mail">Mail</a>
+                        <a href="/mail">Mail</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/notifications">Notifications</a>
+                        <a href="/notifications">Notifications</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/packages">Package Development</a>
+                        <a href="/packages">Package Development</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/processes">Processes</a>
+                        <a href="/processes">Processes</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/queues">Queues</a>
+                        <a href="/queues">Queues</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/rate-limiting">Rate Limiting</a>
+                        <a href="/rate-limiting">Rate Limiting</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/strings">Strings</a>
+                        <a href="/strings">Strings</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/scheduling">Task Scheduling</a>
+                        <a href="/scheduling">Task Scheduling</a>
                       </li>
                     </ul>
                   </li>
@@ -671,22 +768,22 @@
                     <h2>Security</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/authentication">Authentication</a>
+                        <a href="/authentication">Authentication</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/authorization">Authorization</a>
+                        <a href="/authorization">Authorization</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/verification">Email Verification</a>
+                        <a href="/verification">Email Verification</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/encryption">Encryption</a>
+                        <a href="/encryption">Encryption</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/hashing">Hashing</a>
+                        <a href="/hashing">Hashing</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/passwords">Password Reset</a>
+                        <a href="/passwords">Password Reset</a>
                       </li>
                     </ul>
                   </li>
@@ -694,22 +791,22 @@
                     <h2>Database</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/database">Getting Started</a>
+                        <a href="/database">Getting Started</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/queries">Query Builder</a>
+                        <a href="/queries">Query Builder</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/pagination">Pagination</a>
+                        <a href="/pagination">Pagination</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/migrations">Migrations</a>
+                        <a href="/migrations">Migrations</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/seeding">Seeding</a>
+                        <a href="/seeding">Seeding</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/redis">Redis</a>
+                        <a href="/redis">Redis</a>
                       </li>
                     </ul>
                   </li>
@@ -717,25 +814,25 @@
                     <h2>Eloquent ORM</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/eloquent">Getting Started</a>
+                        <a href="/eloquent">Getting Started</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/eloquent-relationships">Relationships</a>
+                        <a href="/eloquent-relationships">Relationships</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/eloquent-collections">Collections</a>
+                        <a href="/eloquent-collections">Collections</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/eloquent-mutators">Mutators / Casts</a>
+                        <a href="/eloquent-mutators">Mutators / Casts</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/eloquent-resources">API Resources</a>
+                        <a href="/eloquent-resources">API Resources</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/eloquent-serialization">Serialization</a>
+                        <a href="/eloquent-serialization">Serialization</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/eloquent-factories">Factories</a>
+                        <a href="/eloquent-factories">Factories</a>
                       </li>
                     </ul>
                   </li>
@@ -743,22 +840,22 @@
                     <h2>Testing</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/testing">Getting Started</a>
+                        <a href="/testing">Getting Started</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/http-tests">HTTP Tests</a>
+                        <a href="/http-tests">HTTP Tests</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/console-tests">Console Tests</a>
+                        <a href="/console-tests">Console Tests</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/dusk">Browser Tests</a>
+                        <a href="/dusk">Browser Tests</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/database-testing">Database</a>
+                        <a href="/database-testing">Database</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/mocking">Mocking</a>
+                        <a href="/mocking">Mocking</a>
                       </li>
                     </ul>
                   </li>
@@ -766,79 +863,79 @@
                     <h2>Packages</h2>
                     <ul>
                       <li>
-                        <a href="/docs/11.x/starter-kits#laravel-breeze">Breeze</a>
+                        <a href="/starter-kits#laravel-breeze">Breeze</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/billing">Cashier (Stripe)</a>
+                        <a href="/billing">Cashier (Stripe)</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/cashier-paddle">Cashier (Paddle)</a>
+                        <a href="/cashier-paddle">Cashier (Paddle)</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/dusk">Dusk</a>
+                        <a href="/dusk">Dusk</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/envoy">Envoy</a>
+                        <a href="/envoy">Envoy</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/fortify">Fortify</a>
+                        <a href="/fortify">Fortify</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/folio">Folio</a>
+                        <a href="/folio">Folio</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/homestead">Homestead</a>
+                        <a href="/homestead">Homestead</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/horizon">Horizon</a>
+                        <a href="/horizon">Horizon</a>
                       </li>
                       <li>
-                        <a href="http://localhost/laravel-doc/">Jetstream</a>
+                        <a href="https://jetstream.laravel.com">Jetstream</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/mix">Mix</a>
+                        <a href="/mix">Mix</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/octane">Octane</a>
+                        <a href="/octane">Octane</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/passport">Passport</a>
+                        <a href="/passport">Passport</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/pennant">Pennant</a>
+                        <a href="/pennant">Pennant</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/pint">Pint</a>
+                        <a href="/pint">Pint</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/precognition">Precognition</a>
+                        <a href="/precognition">Precognition</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/prompts">Prompts</a>
+                        <a href="/prompts">Prompts</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/pulse">Pulse</a>
+                        <a href="/pulse">Pulse</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/reverb">Reverb</a>
+                        <a href="/reverb">Reverb</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/sail">Sail</a>
+                        <a href="/sail">Sail</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/sanctum">Sanctum</a>
+                        <a href="/sanctum">Sanctum</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/scout">Scout</a>
+                        <a href="/scout">Scout</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/socialite">Socialite</a>
+                        <a href="/socialite">Socialite</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/telescope">Telescope</a>
+                        <a href="/telescope">Telescope</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/valet">Valet</a>
+                        <a href="/valet">Valet</a>
                       </li>
                     </ul>
                   </li>
@@ -853,7 +950,7 @@
 
         <section class="flex-1 dark:bg-dark-700">
           <div class="max-w-screen-lg px-8 sm:px-16 lg:px-24">
-            <div class="flex flex-col items-end border-b border-gray-200 py-1 transition-colors dark:border-gray-700 lg:mt-8 lg:flex-row-reverse" >
+            <div class="flex flex-col items-end border-b border-gray-200 py-1 transition-colors dark:border-gray-700 lg:mt-8 lg:flex-row-reverse">
               <div class="hidden lg:flex items-center justify-center ml-8">
                 <button id="header__sun" onclick="toSystemMode()" title="Switch to system theme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -876,8 +973,6 @@
                   </svg>
                 </button>
               </div>
-              
-
               <div class="w-full lg:w-40 lg:pl-12">
                 <div>
                   <label class="text-gray-600 text-xs tracking-widest uppercase dark:text-gray-500" for="version-switcher">Version</label>
@@ -888,31 +983,38 @@
                       class="appearance-none flex-1 w-full px-0 py-1 placeholder-gray-900 tracking-wide bg-white focus:outline-none dark:bg-dark-700 dark:text-gray-400 dark:placeholder-gray-500"
                       @change="window.location = $event.target.value"
                     >
-                      <option value="http://localhost/laravel-doc/">Master</option>
-                      <option selected value="http://localhost/laravel-doc/">11.x</option>
-                      <option value="http://localhost/laravel-doc/">10.x</option>
-                      <option value="http://localhost/laravel-doc/">9.x</option>
-                      <option value="http://localhost/laravel-doc/">8.x</option>
-                      <option value="http://localhost/laravel-doc/">7.x</option>
-                      <option value="http://localhost/laravel-doc/">6.x</option>
-                      <option value="http://localhost/laravel-doc/">5.x</option>
-                      <option value="http://localhost/laravel-doc/">4.x</option>
+                      <option value="https://laravel.com/docs/master">Master</option>
+                      <option selected value="https://laravel.com">11.x</option>
+                      <option value="https://laravel.com/docs/10.x">10.x</option>
+                      <option value="https://laravel.com/docs/9.x">9.x</option>
+                      <option value="https://laravel.com/docs/8.x">8.x</option>
+                      <option value="https://laravel.com/docs/7.x">7.x</option>
+                      <option value="https://laravel.com/docs/6.x">6.x</option>
+                      <option value="https://laravel.com/docs/5.8">5.8</option>
+                      <option value="https://laravel.com/docs/5.7">5.7</option>
+                      <option value="https://laravel.com/docs/5.6">5.6</option>
+                      <option value="https://laravel.com/docs/5.5">5.5</option>
+                      <option value="https://laravel.com/docs/5.4">5.4</option>
+                      <option value="https://laravel.com/docs/5.3">5.3</option>
+                      <option value="https://laravel.com/docs/5.2">5.2</option>
+                      <option value="https://laravel.com/docs/5.1">5.1</option>
+                      <option value="https://laravel.com/docs/5.0">5.0</option>
+                      <option value="https://laravel.com/docs/4.2">4.2</option>
                     </select>
-                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none dark:hidden" src="assets/img/drop_arrow.min.svg" alt="" />
-                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none hidden dark:block" src="assets/img/drop_arrow.dark.min.svg" alt="" />
+                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none dark:hidden" src="./assets/img/drop_arrow.min.svg" alt="" width="10" height="10" />
+                    <img class="absolute inset-y-0 right-0 mt-2.5 w-2.5 h-2.5 text-gray-900 pointer-events-none hidden dark:block" src="./assets/img/drop_arrow.dark.min.svg" alt="" width="10" height="10" />
                   </div>
                 </div>
-              </div>        
-              
+              </div>
               <div class="relative mt-8 flex items-center justify-end w-full h-10 lg:mt-0">
-                  <div class="flex-1 flex items-center">
-                    <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400 w-full"></button>
-                  </div>
+                <div class="flex-1 flex items-center">
+                  <button id="docsearch" class="text-gray-800 transition-colors dark:text-gray-400 w-full"></button>
+                </div>
               </div>
             </div>
 
             <section class="mt-8 md:mt-16">
-              <section class="docs_main max-w-prose" >
+              <section class="docs_main max-w-prose">
                 <div id="main-content">
                   <h1>Installation</h1>
                   <ul>
@@ -998,12 +1100,23 @@
                     Whether you are new to PHP web frameworks or have years of experience, Laravel is a framework that can grow with you. We'll help you take your first steps as a web developer or give you a boost as you take your expertise
                     to the next level. We can't wait to see what you build.
                   </p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      New to Laravel? Check out the <a href="http://localhost/laravel-doc/">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">
+                      New to Laravel? Check out the <a href="https://bootcamp.laravel.com">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
                     </p>
-                  </blockquote>
+                  </div>
                   <p><a name="why-laravel"></a></p>
                   <h3>Why Laravel?</h3>
                   <p>There are a variety of tools and frameworks available to you when building a web application. However, we believe Laravel is the best choice for building modern, full-stack web applications.</p>
@@ -1013,15 +1126,15 @@
                     <a href="https://laracasts.com">video tutorials</a> will help you learn the ropes without becoming overwhelmed.
                   </p>
                   <p>
-                    If you're a senior developer, Laravel gives you robust tools for <a href="/docs/11.x/container">dependency injection</a>, <a href="/docs/11.x/testing">unit testing</a>, <a href="/docs/11.x/queues">queues</a>,
-                    <a href="/docs/11.x/broadcasting">real-time events</a>, and more. Laravel is fine-tuned for building professional web applications and ready to handle enterprise work loads.
+                    If you're a senior developer, Laravel gives you robust tools for <a href="/container">dependency injection</a>, <a href="/testing">unit testing</a>, <a href="/queues">queues</a>,
+                    <a href="/broadcasting">real-time events</a>, and more. Laravel is fine-tuned for building professional web applications and ready to handle enterprise work loads.
                   </p>
                   <h4>A Scalable Framework</h4>
                   <p>
                     Laravel is incredibly scalable. Thanks to the scaling-friendly nature of PHP and Laravel's built-in support for fast, distributed cache systems like Redis, horizontal scaling with Laravel is a breeze. In fact, Laravel
                     applications have been easily scaled to handle hundreds of millions of requests per month.
                   </p>
-                  <p>Need extreme scaling? Platforms like <a href="http://localhost/laravel-doc/">Laravel Vapor</a> allow you to run your Laravel application at nearly limitless scale on AWS's latest serverless technology.</p>
+                  <p>Need extreme scaling? Platforms like <a href="https://vapor.laravel.com">Laravel Vapor</a> allow you to run your Laravel application at nearly limitless scale on AWS's latest serverless technology.</p>
                   <h4>A Community Framework</h4>
                   <p>
                     Laravel combines the best packages in the PHP ecosystem to offer the most robust and developer friendly framework available. In addition, thousands of talented developers from around the world have
@@ -1037,7 +1150,10 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="nothing" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">composer create-project laravel/laravel example-app</span></div></code></pre>
                   </div>
-                  <p>Or, you may create new Laravel projects by globally installing <a href="https://github.com/laravel/installer">the Laravel installer</a> via Composer:</p>
+                  <p>
+                    Or, you may create new Laravel projects by globally installing <a href="https://github.com/laravel/installer">the Laravel installer</a> via Composer. The Laravel installer allows you to select your preferred testing
+                    framework, database, and starter kit when creating new applications:
+                  </p>
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="nothing" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">composer global require laravel/installer</span></div><div class='line'>&nbsp;</div><div class='line'><span style="color: #BFC7D5;">laravel new example-app</span></div></code></pre>
                   </div>
@@ -1049,12 +1165,24 @@
                     Once you have started the Artisan development server, your application will be accessible in your web browser at <a href="http://localhost:8000">http://localhost:8000</a>. Next, you're ready to
                     <a href="#next-steps">start taking your next steps into the Laravel ecosystem</a>. Of course, you may also want to <a href="#databases-and-migrations">configure a database</a>.
                   </p>
-                  <blockquote>
-                    <p>
-                      [!NOTE] If you would like a head start when developing your Laravel application, consider using one of our <a href="/docs/11.x/starter-kits">starter kits</a>. Laravel's starter kits provide backend and frontend
-                      authentication scaffolding for your new Laravel application.
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">
+                      If you would like a head start when developing your Laravel application, consider using one of our <a href="/starter-kits">starter kits</a>. Laravel's starter kits provide backend and frontend authentication
+                      scaffolding for your new Laravel application.
                     </p>
-                  </blockquote>
+                  </div>
                   <p><a name="initial-configuration"></a></p>
                   <h2>Initial Configuration</h2>
                   <p>
@@ -1075,9 +1203,23 @@
                     Your <code>.env</code> file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would
                     be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would be exposed.
                   </p>
-                  <blockquote>
-                    <p>[!NOTE] For more information about the <code>.env</code> file and environment based configuration, check out the full <a href="/docs/11.x/configuration#environment-configuration">configuration documentation</a>.</p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">
+                      For more information about the <code>.env</code> file and environment based configuration, check out the full <a href="/configuration#environment-configuration">configuration documentation</a>.
+                    </p>
+                  </div>
                   <p><a name="databases-and-migrations"></a></p>
                   <h3>Databases and Migrations</h3>
                   <p>
@@ -1092,13 +1234,25 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="ini" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #C792EA;">DB_CONNECTION</span><span style="color: #BFC7D5;">=mysql</span></div><div class='line'><span style="color: #C792EA;">DB_HOST</span><span style="color: #BFC7D5;">=127.0.0.1</span></div><div class='line'><span style="color: #C792EA;">DB_PORT</span><span style="color: #BFC7D5;">=3306</span></div><div class='line'><span style="color: #C792EA;">DB_DATABASE</span><span style="color: #BFC7D5;">=laravel</span></div><div class='line'><span style="color: #C792EA;">DB_USERNAME</span><span style="color: #BFC7D5;">=root</span></div><div class='line'><span style="color: #C792EA;">DB_PASSWORD</span><span style="color: #BFC7D5;">=</span></div></code></pre>
                   </div>
-                  <p>If you choose to use a database other than SQLite, you will need to create the database and run your application's <a href="/docs/11.x/migrations">database migrations</a>:</p>
+                  <p>If you choose to use a database other than SQLite, you will need to create the database and run your application's <a href="/migrations">database migrations</a>:</p>
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">php </span><span style="color: #BFC7D5;">artisan</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">migrate</span></div></code></pre>
                   </div>
-                  <blockquote>
-                    <p>[!NOTE] If you are developing on macOS or Windows and need to install MySQL, PostgreSQL, or Redis locally, consider using <a href="http://localhost/laravel-doc/#plans">Herd Pro</a>.</p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">If you are developing on macOS or Windows and need to install MySQL, PostgreSQL, or Redis locally, consider using <a href="https://herd.laravel.com/#plans">Herd Pro</a>.</p>
+                  </div>
                   <p><a name="directory-configuration"></a></p>
                   <h3>Directory Configuration</h3>
                   <p>
@@ -1108,24 +1262,36 @@
                   <p><a name="local-installation-using-herd"></a></p>
                   <h2>Local Installation Using Herd</h2>
                   <p>
-                    <a href="http://localhost/laravel-doc/">Laravel Herd</a> is a blazing fast, native Laravel and PHP development environment for macOS and Windows. Herd includes everything you need to get started with Laravel development, including PHP and
-                    Nginx.
+                    <a href="https://herd.laravel.com">Laravel Herd</a> is a blazing fast, native Laravel and PHP development environment for macOS and Windows. Herd includes everything you need to get started with Laravel development,
+                    including PHP and Nginx.
                   </p>
                   <p>
                     Once you install Herd, you're ready to start developing with Laravel. Herd includes command line tools for <code>php</code>, <code>composer</code>, <code>laravel</code>, <code>expose</code>, <code>node</code>,
                     <code>npm</code>, and <code>nvm</code>.
                   </p>
-                  <blockquote>
-                    <p>
-                      [!NOTE] <a href="http://localhost/laravel-doc/#plans">Herd Pro</a> augments Herd with additional powerful features, such as the ability to create and manage local MySQL, Postgres, and Redis databases, as well as local mail viewing and
-                      log monitoring.
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">
+                      <a href="https://herd.laravel.com/#plans">Herd Pro</a> augments Herd with additional powerful features, such as the ability to create and manage local MySQL, Postgres, and Redis databases, as well as local mail viewing
+                      and log monitoring.
                     </p>
-                  </blockquote>
+                  </div>
                   <p><a name="herd-on-macos"></a></p>
                   <h3>Herd on macOS</h3>
                   <p>
-                    If you develop on macOS, you can download the Herd installer from the <a href="http://localhost/laravel-doc/">Herd website</a>. The installer automatically downloads the latest version of PHP and configures your Mac to always run
-                    <a href="https://www.nginx.com/">Nginx</a> in the background.
+                    If you develop on macOS, you can download the Herd installer from the <a href="https://herd.laravel.com">Herd website</a>. The installer automatically downloads the latest version of PHP and configures your Mac to always
+                    run <a href="https://www.nginx.com/">Nginx</a> in the background.
                   </p>
                   <p>
                     Herd for macOS uses <a href="https://en.wikipedia.org/wiki/Dnsmasq">dnsmasq</a> to support &quot;parked&quot; directories. Any Laravel application in a parked directory will automatically be served by Herd. By default,
@@ -1136,12 +1302,12 @@
                     <pre><code data-theme="olaolu-palenight" data-lang="nothing" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">cd ~/Herd</span></div><div class='line'><span style="color: #BFC7D5;">laravel new my-app</span></div><div class='line'><span style="color: #BFC7D5;">cd my-app</span></div><div class='line'><span style="color: #BFC7D5;">herd open</span></div></code></pre>
                   </div>
                   <p>Of course, you can always manage your parked directories and other PHP settings via Herd's UI, which can be opened from the Herd menu in your system tray.</p>
-                  <p>You can learn more about Herd by checking out the <a href="http://localhost/laravel-doc/docs">Herd documentation</a>.</p>
+                  <p>You can learn more about Herd by checking out the <a href="https://herd.laravel.com/docs">Herd documentation</a>.</p>
                   <p><a name="herd-on-windows"></a></p>
                   <h3>Herd on Windows</h3>
                   <p>
-                    You can download the Windows installer for Herd on the <a href="http://localhost/laravel-doc/windows">Herd website</a>. After the installation finishes, you can start Herd to complete the onboarding process and access the Herd UI for the
-                    first time.
+                    You can download the Windows installer for Herd on the <a href="https://herd.laravel.com/windows">Herd website</a>. After the installation finishes, you can start Herd to complete the onboarding process and access the
+                    Herd UI for the first time.
                   </p>
                   <p>The Herd UI is accessible by left-clicking on Herd's system tray icon. A right-click opens the quick menu with access to all tools that you need on a daily basis.</p>
                   <p>
@@ -1152,12 +1318,12 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="nothing" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">cd ~\Herd</span></div><div class='line'><span style="color: #BFC7D5;">laravel new my-app</span></div><div class='line'><span style="color: #BFC7D5;">cd my-app</span></div><div class='line'><span style="color: #BFC7D5;">herd open</span></div></code></pre>
                   </div>
-                  <p>You can learn more about Herd by checking out the <a href="http://localhost/laravel-doc/docs/windows">Herd documentation for Windows</a>.</p>
+                  <p>You can learn more about Herd by checking out the <a href="https://herd.laravel.com/docs/windows">Herd documentation for Windows</a>.</p>
                   <p><a name="docker-installation-using-sail"></a></p>
                   <h2>Docker Installation Using Sail</h2>
                   <p>
                     We want it to be as easy as possible to get started with Laravel regardless of your preferred operating system. So, there are a variety of options for developing and running a Laravel project on your local machine. While
-                    you may wish to explore these options at a later time, Laravel provides <a href="/docs/11.x/sail">Sail</a>, a built-in solution for running your Laravel project using <a href="https://www.docker.com">Docker</a>.
+                    you may wish to explore these options at a later time, Laravel provides <a href="/sail">Sail</a>, a built-in solution for running your Laravel project using <a href="https://www.docker.com">Docker</a>.
                   </p>
                   <p>
                     Docker is a tool for running applications and services in small, light-weight &quot;containers&quot; which do not interfere with your local machine's installed software or configuration. This means you don't have to
@@ -1168,12 +1334,21 @@
                     Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker configuration. Sail provides a great starting point for building a Laravel application using PHP, MySQL, and Redis
                     without requiring prior Docker experience.
                   </p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      Already a Docker expert? Don't worry! Everything about Sail can be customized using the <code>docker-compose.yml</code> file included with Laravel.
-                    </p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">Already a Docker expert? Don't worry! Everything about Sail can be customized using the <code>docker-compose.yml</code> file included with Laravel.</p>
+                  </div>
                   <p><a name="sail-on-macos"></a></p>
                   <h3>Sail on macOS</h3>
                   <p>
@@ -1194,17 +1369,26 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #89DDFF;">cd</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">example-app</span></div><div class='line'>&nbsp;</div><div class='line'><span style="color: #BFC7D5;">./vendor/bin/sail </span><span style="color: #BFC7D5;">up</span></div></code></pre>
                   </div>
-                  <p>Once the application's Docker containers have started, you should run your application's <a href="/docs/11.x/migrations">database migrations</a>:</p>
+                  <p>Once the application's Docker containers have started, you should run your application's <a href="/migrations">database migrations</a>:</p>
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">./vendor/bin/sail </span><span style="color: #BFC7D5;">artisan</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">migrate</span></div></code></pre>
                   </div>
                   <p>Finally, you can access the application in your web browser at: <a href="http://localhost">http://localhost</a>.</p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      To continue learning more about Laravel Sail, review its <a href="/docs/11.x/sail">complete documentation</a>.
-                    </p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">To continue learning more about Laravel Sail, review its <a href="/sail">complete documentation</a>.</p>
+                  </div>
                   <p><a name="sail-on-windows"></a></p>
                   <h3>Sail on Windows</h3>
                   <p>
@@ -1212,12 +1396,21 @@
                     Linux 2 (WSL2) is installed and enabled. WSL allows you to run Linux binary executables natively on Windows 10. Information on how to install and enable WSL2 can be found within Microsoft's
                     <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">developer environment documentation</a>.
                   </p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      After installing and enabling WSL2, you should ensure that Docker Desktop is <a href="https://docs.docker.com/docker-for-windows/wsl/">configured to use the WSL2 backend</a>.
-                    </p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">After installing and enabling WSL2, you should ensure that Docker Desktop is <a href="https://docs.docker.com/docker-for-windows/wsl/">configured to use the WSL2 backend</a>.</p>
+                  </div>
                   <p>
                     Next, you are ready to create your first Laravel project. Launch <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&amp;activetab=pivot:overviewtab">Windows Terminal</a> and begin a new
                     terminal session for your WSL2 Linux operating system. Next, you can use a simple terminal command to create a new Laravel project. For example, to create a new Laravel application in a directory named
@@ -1237,17 +1430,26 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #89DDFF;">cd</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">example-app</span></div><div class='line'>&nbsp;</div><div class='line'><span style="color: #BFC7D5;">./vendor/bin/sail </span><span style="color: #BFC7D5;">up</span></div></code></pre>
                   </div>
-                  <p>Once the application's Docker containers have started, you should run your application's <a href="/docs/11.x/migrations">database migrations</a>:</p>
+                  <p>Once the application's Docker containers have started, you should run your application's <a href="/migrations">database migrations</a>:</p>
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">./vendor/bin/sail </span><span style="color: #BFC7D5;">artisan</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">migrate</span></div></code></pre>
                   </div>
                   <p>Finally, you can access the application in your web browser at: <a href="http://localhost">http://localhost</a>.</p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      To continue learning more about Laravel Sail, review its <a href="/docs/11.x/sail">complete documentation</a>.
-                    </p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">To continue learning more about Laravel Sail, review its <a href="/sail">complete documentation</a>.</p>
+                  </div>
                   <h4>Developing Within WSL2</h4>
                   <p>
                     Of course, you will need to be able to modify the Laravel application files that were created within your WSL2 installation. To accomplish this, we recommend using Microsoft's
@@ -1277,17 +1479,26 @@
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #89DDFF;">cd</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">example-app</span></div><div class='line'>&nbsp;</div><div class='line'><span style="color: #BFC7D5;">./vendor/bin/sail </span><span style="color: #BFC7D5;">up</span></div></code></pre>
                   </div>
-                  <p>Once the application's Docker containers have started, you should run your application's <a href="/docs/11.x/migrations">database migrations</a>:</p>
+                  <p>Once the application's Docker containers have started, you should run your application's <a href="/migrations">database migrations</a>:</p>
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">./vendor/bin/sail </span><span style="color: #BFC7D5;">artisan</span><span style="color: #BFC7D5;"> </span><span style="color: #BFC7D5;">migrate</span></div></code></pre>
                   </div>
                   <p>Finally, you can access the application in your web browser at: <a href="http://localhost">http://localhost</a>.</p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      To continue learning more about Laravel Sail, review its <a href="/docs/11.x/sail">complete documentation</a>.
-                    </p>
-                  </blockquote>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">To continue learning more about Laravel Sail, review its <a href="/sail">complete documentation</a>.</p>
+                  </div>
                   <p><a name="choosing-your-sail-services"></a></p>
                   <h3>Choosing Your Sail Services</h3>
                   <p>
@@ -1301,7 +1512,7 @@
                   <p>
                     If you do not specify which services you would like configured, a default stack of <code>mysql</code>, <code>redis</code>, <code>meilisearch</code>, <code>mailpit</code>, and <code>selenium</code> will be configured.
                   </p>
-                  <p>You may instruct Sail to install a default <a href="/docs/11.x/sail#using-devcontainers">Devcontainer</a> by adding the <code>devcontainer</code> parameter to the URL:</p>
+                  <p>You may instruct Sail to install a default <a href="/sail#using-devcontainers">Devcontainer</a> by adding the <code>devcontainer</code> parameter to the URL:</p>
                   <div class="code-container">
                     <pre><code data-theme="olaolu-palenight" data-lang="shell" class='torchlight' style='background-color: #292D3E; --theme-selection-background: #7580B850;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color: #BFC7D5;">curl </span><span style="color: #82AAFF;">-s</span><span style="color: #BFC7D5;"> </span><span style="color: #D9F5DD;">&quot;</span><span style="color: #C3E88D;">https://laravel.build/example-app?with=mysql,redis&amp;devcontainer</span><span style="color: #D9F5DD;">&quot;</span><span style="color: #BFC7D5;"> </span><span style="color: #89DDFF;">|</span><span style="color: #BFC7D5;"> bash</span></div></code></pre>
                   </div>
@@ -1321,69 +1532,103 @@
                   <div class="content-list" markdown="1">
                     <ul>
                       <li>
-                        <a href="/docs/11.x/lifecycle">Request Lifecycle</a>
+                        <a href="/lifecycle">Request Lifecycle</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/configuration">Configuration</a>
+                        <a href="/configuration">Configuration</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/structure">Directory Structure</a>
+                        <a href="/structure">Directory Structure</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/frontend">Frontend</a>
+                        <a href="/frontend">Frontend</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/container">Service Container</a>
+                        <a href="/container">Service Container</a>
                       </li>
                       <li>
-                        <a href="/docs/11.x/facades">Facades</a>
+                        <a href="/facades">Facades</a>
                       </li>
                     </ul>
                   </div>
                   <p>How you want to use Laravel will also dictate the next steps on your journey. There are a variety of ways to use Laravel, and we'll explore two primary use cases for the framework below.</p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      New to Laravel? Check out the <a href="http://localhost/laravel-doc/">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">
+                      New to Laravel? Check out the <a href="https://bootcamp.laravel.com">Laravel Bootcamp</a> for a hands-on tour of the framework while we walk you through building your first Laravel application.
                     </p>
-                  </blockquote>
+                  </div>
                   <p><a name="laravel-the-fullstack-framework"></a></p>
                   <h3>Laravel the Full Stack Framework</h3>
                   <p>
                     Laravel may serve as a full stack framework. By &quot;full stack&quot; framework we mean that you are going to use Laravel to route requests to your application and render your frontend via
-                    <a href="/docs/11.x/blade">Blade templates</a> or a single-page application hybrid technology like <a href="https://inertiajs.com">Inertia</a>. This is the most common way to use the Laravel framework, and, in our
+                    <a href="/blade">Blade templates</a> or a single-page application hybrid technology like <a href="https://inertiajs.com">Inertia</a>. This is the most common way to use the Laravel framework, and, in our
                     opinion, the most productive way to use Laravel.
                   </p>
                   <p>
-                    If this is how you plan to use Laravel, you may want to check out our documentation on <a href="/docs/11.x/frontend">frontend development</a>, <a href="/docs/11.x/routing">routing</a>,
-                    <a href="/docs/11.x/views">views</a>, or the <a href="/docs/11.x/eloquent">Eloquent ORM</a>. In addition, you might be interested in learning about community packages like <a href="http://localhost/laravel-doc/">Livewire</a> and
-                    <a href="https://inertiajs.com">Inertia</a>. These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
+                    If this is how you plan to use Laravel, you may want to check out our documentation on <a href="/frontend">frontend development</a>, <a href="/routing">routing</a>,
+                    <a href="/views">views</a>, or the <a href="/eloquent">Eloquent ORM</a>. In addition, you might be interested in learning about community packages like
+                    <a href="https://livewire.laravel.com">Livewire</a> and <a href="https://inertiajs.com">Inertia</a>. These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by
+                    single-page JavaScript applications.
                   </p>
-                  <p>If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using <a href="/docs/11.x/vite">Vite</a>.</p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      If you want to get a head start building your application, check out one of our official <a href="/docs/11.x/starter-kits">application starter kits</a>.
-                    </p>
-                  </blockquote>
+                  <p>If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using <a href="/vite">Vite</a>.</p>
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">If you want to get a head start building your application, check out one of our official <a href="/starter-kits">application starter kits</a>.</p>
+                  </div>
                   <p><a name="laravel-the-api-backend"></a></p>
                   <h3>Laravel the API Backend</h3>
                   <p>
                     Laravel may also serve as an API backend to a JavaScript single-page application or mobile application. For example, you might use Laravel as an API backend for your <a href="https://nextjs.org">Next.js</a> application.
-                    In this context, you may use Laravel to provide <a href="/docs/11.x/sanctum">authentication</a> and data storage / retrieval for your application, while also taking advantage of Laravel's powerful services such as
+                    In this context, you may use Laravel to provide <a href="/sanctum">authentication</a> and data storage / retrieval for your application, while also taking advantage of Laravel's powerful services such as
                     queues, emails, notifications, and more.
                   </p>
                   <p>
-                    If this is how you plan to use Laravel, you may want to check out our documentation on <a href="/docs/11.x/routing">routing</a>, <a href="/docs/11.x/sanctum">Laravel Sanctum</a>, and the
-                    <a href="/docs/11.x/eloquent">Eloquent ORM</a>.
+                    If this is how you plan to use Laravel, you may want to check out our documentation on <a href="/routing">routing</a>, <a href="/sanctum">Laravel Sanctum</a>, and the
+                    <a href="/eloquent">Eloquent ORM</a>.
                   </p>
-                  <blockquote>
-                    <p>
-                      [!NOTE]<br />
-                      Need a head start scaffolding your Laravel backend and Next.js frontend? Laravel Breeze offers an <a href="/docs/11.x/starter-kits#breeze-and-next">API stack</a> as well as a
+                  <div class="mb-10 max-w-2xl mx-auto px-4 py-8 shadow-lg lg:flex lg:items-center callout">
+                    <div class="w-20 h-20 mb-6 flex items-center justify-center shrink-0 lg:mb-0 bg-purple-600">
+                      <div class="opacity-75">
+                        <svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">
+                          <title>lightbulb</title>
+                          <path
+                            d="M12 28h4v-8h-4v8zM8 40h12v-8H8v8zm13.98-14.52c-1.001.705-1.661 1.545-1.98 2.52H8c-.416-.959-1.076-1.799-1.98-2.52A13.99 13.99 0 0 1 0 14C0 6.272 6.272 0 14 0s14 6.272 14 14a13.99 13.99 0 0 1-6.02 11.48z"
+                            fill="#FFF"
+                            fill-rule="nonzero"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="mb-0 lg:ml-6 callout">
+                      Need a head start scaffolding your Laravel backend and Next.js frontend? Laravel Breeze offers an <a href="/starter-kits#breeze-and-next">API stack</a> as well as a
                       <a href="https://github.com/laravel/breeze-next">Next.js frontend implementation</a> so you can get started in minutes.
                     </p>
-                  </blockquote>
+                  </div>
+
+                  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYILK3E&placement=laravelcom" id="_carbonads_js"></script>
                 </div>
               </section>
             </section>
@@ -1394,14 +1639,13 @@
 
     <footer class="relative pt-12 dark:bg-dark-700">
       <div class="max-w-screen-2xl mx-auto w-full px-8">
-      
-        <!-- <div>
+        <div>
           <a href="/" class="inline-flex">
-            <img class="w-16 h-16" src="assets/img/logomark.min.svg" alt="Laravel" loading="lazy" />
+            <img class="w-16 h-16" src="./assets/img/logomark.min.svg" alt="Laravel" width="64" height="64" loading="lazy" />
           </a>
-        </div> -->
+        </div>
 
-        <!-- <div class="mt-6 grid grid-cols-12 md:gap-x-8 gap-y-12 sm:mt-12">
+        <div class="mt-6 grid grid-cols-12 md:gap-x-8 gap-y-12 sm:mt-12">
           <div class="col-span-12 lg:col-span-4">
             <p class="max-w-sm text-xs text-gray-700 sm:text-sm dark:text-gray-500">
               Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing
@@ -1410,26 +1654,26 @@
             <ul class="mt-6 flex items-center space-x-3">
               <li>
                 <a href="https://x.com/laravelphp">
-                  <img class="hidden dark:inline-block w-6 h-6" src="assets/img/social/x.dark.min.svg" alt="X" width="24" height="20" loading="lazy" />
-                  <img class="inline-block dark:hidden w-6 h-6" src="assets/img/social/x.min.svg" alt="X" width="24" height="20" loading="lazy" />
+                  <img class="hidden dark:inline-block w-6 h-6" src="./assets/img/social/x.dark.min.svg" alt="X" width="24" height="20" loading="lazy" />
+                  <img class="inline-block dark:hidden w-6 h-6" src="./assets/img/social/x.min.svg" alt="X" width="24" height="20" loading="lazy" />
                 </a>
               </li>
               <li>
                 <a href="https://github.com/laravel">
-                  <img class="hidden dark:inline-block w-6 h-6" src="assets/img/social/github.dark.min.svg" alt="GitHub" width="24" height="24" loading="lazy" />
-                  <img class="inline-block dark:hidden w-6 h-6" src="assets/img/social/github.min.svg" alt="GitHub" width="24" height="24" loading="lazy" />
+                  <img class="hidden dark:inline-block w-6 h-6" src="./assets/img/social/github.dark.min.svg" alt="GitHub" width="24" height="24" loading="lazy" />
+                  <img class="inline-block dark:hidden w-6 h-6" src="./assets/img/social/github.min.svg" alt="GitHub" width="24" height="24" loading="lazy" />
                 </a>
               </li>
               <li>
                 <a href="https://discord.gg/laravel">
-                  <img class="hidden dark:inline-block w-6 h-6" src="assets/img/social/discord.dark.min.svg" alt="Discord" width="21" height="24" loading="lazy" />
-                  <img class="inline-block dark:hidden w-6 h-6" src="assets/img/social/discord.min.svg" alt="Discord" width="21" height="24" loading="lazy" />
+                  <img class="hidden dark:inline-block w-6 h-6" src="./assets/img/social/discord.dark.min.svg" alt="Discord" width="21" height="24" loading="lazy" />
+                  <img class="inline-block dark:hidden w-6 h-6" src="./assets/img/social/discord.min.svg" alt="Discord" width="21" height="24" loading="lazy" />
                 </a>
               </li>
               <li>
                 <a href="https://www.youtube.com/laravelphp">
-                  <img class="hidden dark:inline-block w-6 h-6" src="assets/img/social/youtube.dark.min.svg" alt="YouTube" width="169" height="150" loading="lazy" />
-                  <img class="inline-block dark:hidden w-6 h-6" src="assets/img/social/youtube.min.svg" alt="YouTube" width="169" height="150" loading="lazy" />
+                  <img class="hidden dark:inline-block w-6 h-6" src="./assets/img/social/youtube.dark.min.svg" alt="YouTube" width="169" height="150" loading="lazy" />
+                  <img class="inline-block dark:hidden w-6 h-6" src="./assets/img/social/youtube.min.svg" alt="YouTube" width="169" height="150" loading="lazy" />
                 </a>
               </li>
             </ul>
@@ -1439,34 +1683,34 @@
             <div class="mt-5">
               <ul class="space-y-3 text-gray-700 dark:text-gray-500">
                 <li>
-                  <a href="/docs/11.x/releases" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Release Notes</a>
+                  <a href="/releases" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Release Notes</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/installation" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Getting Started</a>
+                  <a href="/installation" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Getting Started</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/routing" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Routing</a>
+                  <a href="/routing" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Routing</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/blade" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Blade Templates</a>
+                  <a href="/blade" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Blade Templates</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/authentication" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Authentication</a>
+                  <a href="/authentication" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Authentication</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/authorization" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Authorization</a>
+                  <a href="/authorization" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Authorization</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/artisan" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Artisan Console</a>
+                  <a href="/artisan" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Artisan Console</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/database" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Database</a>
+                  <a href="/database" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Database</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/eloquent" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Eloquent ORM</a>
+                  <a href="/eloquent" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Eloquent ORM</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/testing" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Testing</a>
+                  <a href="/testing" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Testing</a>
                 </li>
               </ul>
             </div>
@@ -1476,7 +1720,7 @@
             <div class="mt-5">
               <ul class="space-y-3 text-gray-700 dark:text-gray-500">
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Laravel Bootcamp</a>
+                  <a href="https://bootcamp.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Laravel Bootcamp</a>
                 </li>
                 <li>
                   <a href="https://laracasts.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Laracasts</a>
@@ -1500,7 +1744,7 @@
                   <a href="https://larabelles.com/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Larabelles</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Careers</a>
+                  <a href="https://laravel.com/careers" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Careers</a>
                 </li>
                 <li>
                   <a href="https://larajobs.com/?partner=5" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Jobs</a>
@@ -1522,7 +1766,7 @@
                   <a href="https://vehikl.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Vehikl</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">WebReinvent</a>
+                  <a href="https://webreinvent.com/?utm_source=laravel&amp;utm_medium=laravel.com&amp;utm_campaign=footer-link" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">WebReinvent</a>
                 </li>
                 <li>
                   <a href="https://tighten.co" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Tighten</a>
@@ -1567,57 +1811,93 @@
             <div class="mt-5">
               <ul class="space-y-3 text-gray-700 dark:text-gray-500">
                 <li>
-                  <a href="/docs/11.x/starter-kits#laravel-breeze" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Breeze</a>
+                  <a href="/starter-kits#laravel-breeze" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Breeze</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/billing" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Cashier</a>
+                  <a href="/billing" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Cashier</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/dusk" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Dusk</a>
+                  <a href="/dusk" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Dusk</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/broadcasting" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Echo</a>
+                  <a href="/broadcasting" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Echo</a>
                 </li>
                 <li>
                   <a href="https://envoyer.io" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Envoyer</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Forge</a>
+                  <a href="https://forge.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Forge</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Herd</a>
+                  <a href="https://herd.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Herd</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/horizon" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Horizon</a>
+                  <a href="/horizon" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Horizon</a>
                 </li>
                 <li>
                   <a href="https://inertiajs.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Inertia</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Jetstream</a>
+                  <a href="https://jetstream.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Jetstream</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Livewire</a>
+                  <a href="https://livewire.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Livewire</a>
                 </li>
                 <li>
-                  <a href="http://localhost/laravel-doc/" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Nova</a>
+                  <a href="https://nova.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Nova</a>
                 </li>
                 <li>
-                  <a href="/docs/11.x/octane" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Octane</a>
+                  <a href="/octane" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Octane</a>
+                </li>
+                <li>
+                  <a href="/pennant" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Pennant</a>
+                </li>
+                <li>
+                  <a href="/pint" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Pint</a>
+                </li>
+                <li>
+                  <a href="/prompts" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Prompts</a>
+                </li>
+                <li>
+                  <a href="https://pulse.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Pulse</a>
+                </li>
+                <li>
+                  <a href="https://reverb.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Reverb</a>
+                </li>
+                <li>
+                  <a href="/sail" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Sail</a>
+                </li>
+                <li>
+                  <a href="/sanctum" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Sanctum</a>
+                </li>
+                <li>
+                  <a href="/scout" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Scout</a>
+                </li>
+                <li>
+                  <a href="/socialite" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Socialite</a>
+                </li>
+                <li>
+                  <a href="https://spark.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Spark</a>
+                </li>
+                <li>
+                  <a href="/telescope" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Telescope</a>
+                </li>
+                <li>
+                  <a href="https://vapor.laravel.com" class="transition-colors hover:text-gray-600 dark:hover:text-gray-400">Vapor</a>
                 </li>
               </ul>
             </div>
           </div>
-        </div> -->
-        <div class="mt-10 border-t pt-6 pb-12 border-gray-200 dark:border-dark-500">
-          <p class="text-xs text-gray-700 text-center dark:text-gray-400">Copyright &copy; 2024 <a href="http://localhost/laravel-doc/">Galih Agus Saputra</a>.</p>
+        </div>
+        <div class="mt-10 border-t pt-6 pb-16 border-gray-200 dark:border-dark-500">
+          <p class="text-xs text-gray-700 dark:text-gray-400">
+            Laravel is a Trademark of Laravel Holdings Inc.<br />
+            Copyright &copy; 2011-2024 Laravel Holdings Inc.
+          </p>
+          <p class="mt-6 text-xs text-gray-700 dark:text-gray-400">Code highlighting provided by <a href="https://torchlight.dev">Torchlight</a></p>
         </div>
       </div>
     </footer>
-
-    <a class="btnScrollToTop items-center justify-center" style="position: fixed; bottom: 15%; right: 25%; display: none;">
-      <img src="./assets/img/lightbulb.min.svg" class="opacity-75">
-    </a>
 
     <script>
       var algolia_app_id = "E3MIRNPJH5";
@@ -1625,35 +1905,10 @@
       var version = "11.x";
     </script>
 
-    <script>
-      var _gaq = [["_setAccount", "UA-23865777-1"], ["_trackPageview"]];
-      (function (d, t) {
-        var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-        g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
-        s.parentNode.insertBefore(g, s);
-      })(document, "script");
-
-
-      const btnScrollToTop = document.querySelector(".btnScrollToTop");
-      // scroll to top of page when button clicked
-      btnScrollToTop.addEventListener("click", (e) => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth",
-        });
-      });
-
-      // toggle 'scroll to top' based on scroll position
-      window.addEventListener("scroll", (e) => {
-        btnScrollToTop.style.display = window.scrollY > 400 ? "block" : "none";
-      });
-    </script>
+   
 
     <!-- HubSpot -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/45240648.js"></script> -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="assets/js/45240648.js"></script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/45240648.js"></script>
 
     <div class="fixed">
       <input type="text" />

@@ -40,9 +40,9 @@
     <link rel="preconnect" href="https://E3MIRNPJH5-dsn.algolia.net" crossorigin />
 
     <link rel="stylesheet" href="https://use.typekit.net/ins2wgm.css" />
-    <link rel="preload" as="style" href="assets/css/app.css" />
+    <link rel="preload" as="style" href="assets/css/home.css" />
     <link rel="modulepreload" href="assets/js/app.js" />
-    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
     <script type="module" src="assets/js/app.js"></script>
     <!-- Fathom - beautiful, simple website analytics -->
     <script src="https://cdn.usefathom.com/script.js" data-site="DVMEKBYF" defer></script>
@@ -214,7 +214,7 @@
     </div>
 
     <div>
-      <section class="relative overflow-hidden pt-48 pb-20 lg:pt-48 xl:pt-56 xl:pb-28">
+      <section class="relative overflow-hidden pt-48 pb-20 lg:pt-48 xl:pt-56 xl:pb-28" >
         <span class="hidden absolute bg-radial-gradient opacity-[.15] pointer-events-none lg:inline-flex left-[-20%] -top-24 w-[640px] h-[640px]"></span>
         <div class="relative max-w-screen-xl px-5 mx-auto">
           <div class="absolute -left-2 -translate-y-12 pointer-events-none md:left-[12%]">
@@ -293,8 +293,8 @@
             </svg>
           </div>
           <div class="relative">
-            <h1 class="max-w-3xl mx-auto text-5xl font-bold text-center md:text-6xl lg:text-7xl">The PHP Framework <br class="hidden lg:inline" /><span class="text-red-500">for Web Artisans</span></h1>
-            <p class="mt-6 max-w-xl mx-auto text-center text-gray-700 text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10">
+            <h1 class="max-w-3xl mx-auto text-5xl font-bold text-center text-dark dark:text-white md:text-6xl lg:text-7xl">The PHP Framework <br class="hidden lg:inline" /><span class="text-red-500">for Web Artisans</span></h1>
+            <p class="mt-6 max-w-xl mx-auto text-center text-md leading-relaxed md:mt-8 md:text-lg lg:mt-10">
               Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.
             </p>
             <div class="mt-6 max-w-sm mx-auto flex flex-col justify-center items-center gap-4 sm:flex-row md:mt-8 lg:mt-10">
